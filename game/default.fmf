@@ -1,0 +1,9 @@
+FTEMANIFEST 1
+GAME worldspawn
+BASEGAME id1
+BASEGAME lq1
+BASEGAME worldspawn
+NAME "worldspawn"
+DISABLEHOMEDIR 1
+MAINCONFIG "config.cfg"
+DEFAULTEXEC "plug_load jolt;plug_load hl2;addon0 worldspawn.dat;exec worldspawn.rc"

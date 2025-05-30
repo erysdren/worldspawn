@@ -1,0 +1,136 @@
+
+@include "ericw_tools.fgd"
+
+//
+// worldspawn
+//
+
+@SolidClass base(EWT_base_Worldspawn) = worldspawn : "World entity"
+[
+	_sky(string)
+	_skyfog(float)
+	_fog(string)
+	message(string)
+]
+
+//
+// base classes
+//
+
+@BaseClass = Angles
+[
+	angles(string)
+]
+
+@BaseClass = Origin
+[
+	origin(string)
+]
+
+@BaseClass base(Angles, Origin) size(-16 -16 -36, 16 16 36) color(64 255 64) = BasePlayer []
+
+@BaseClass base(Angles, Origin) size(-16 -16 0, 16 16 72) color(255 64 64) = BaseMonster []
+
+@BaseClass base(EWT_base_PointLight) color(255 255 64) = BaseLight
+[
+	targetname(string) : "Name"
+	target(string) : "Target"
+	style(choices) : : 0 =
+	[
+		0 : "normal"
+		10: "fluorescent flicker"
+		2 : "slow, strong pulse"
+		11: "slow pulse, no black"
+		5 : "gentle pulse"
+		1 : "flicker a"
+		6 : "flicker b"
+		3 : "candle a"
+		7 : "candle b"
+		8 : "candle c"
+		4 : "fast strobe"
+		9 : "slow strobe"
+		12: "electrical issue" 
+		13: "pitiful flourescent"
+	]
+	spawnflags(flags) =
+	[
+		1 : "Start Off" : 0
+	]
+]
+
+@BaseClass base(Origin, Angles) size(-16 -16 0, 16 16 72) model({ "path" : model, "scale" : scale, "skin" : skin, "frame" : frame }) = BaseProp
+[
+	model(string)
+	scale(float)
+	skin(integer)
+	frame(integer)
+	alpha(float)
+	_shadow(integer)
+]
+
+//
+// info
+//
+
+@PointClass base(BasePlayer) = info_player_start : "Player Start" []
+
+//
+// other
+//
+
+@PointClass base(BaseLight) = light : "Light" []
+
+//
+// vehicles
+//
+
+@PointClass size(-16 -16 -16, 16 16 16) model({ "path" : "models/HotRod_body.mdl" }) = prop_vehicle_hotrod : "Hot Rod" []
+
+//
+// phys
+//
+
+@PointClass base(BaseProp) size(-16 -16 -16, 16 16 16) = phys_box : "Phys Box"
+[
+
+]
+
+@PointClass size(-16 -16 -16, 16 16 16) model({ "path" : "models/sphere.iqm" }) = phys_sphere : "Phys Sphere"
+[
+
+]
+
+@PointClass = phys_constraint : "Phys Constraint"
+[
+	target(string)
+	target1(string)
+	target2(string)
+	jointtype(choices) : : 1 =
+	[
+		1 : "point"
+		2 : "hinge"
+		3 : "slider"
+		4 : "universal"
+		5 : "hinge2"
+		-1 : "fixed"
+	]
+]
+
+@PointClass size(-16 -16 -32, 16 16 32) model({ "path" : "models/tallbox.iqm" }) = phys_springbox : "Phys SpringBox"
+[
+
+]
+
+//
+// prop
+//
+
+@PointClass base(BaseProp) size(-16 -16 -16, 16 16 16) = prop_static : "Static Prop"
+[
+
+]
+
+@PointClass base(BaseProp) size(-16 -16 -16, 16 16 16) = prop_physics : "Physics Prop"
+[
+
+]

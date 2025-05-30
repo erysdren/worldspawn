@@ -1,0 +1,81 @@
+{
+	"version": 10,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 21,
+		"patch": 0
+	},
+	"configurePresets": [
+		{
+			"name": "default",
+			"displayName": "Default",
+			"generator": "Unix Makefiles",
+			"binaryDir": "build"
+		},
+		{
+			"name": "release",
+			"displayName": "Release",
+			"generator": "Unix Makefiles",
+			"binaryDir": "build",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Release"
+			}
+		},
+		{
+			"name": "debug",
+			"displayName": "Debug",
+			"generator": "Unix Makefiles",
+			"binaryDir": "build",
+			"cacheVariables": {
+				"CMAKE_BUILD_TYPE": "Debug"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "all",
+			"configurePreset": "default",
+			"targets": ["tools", "engine", "maps", "models", "quakec"]
+		},
+		{
+			"name": "all-release",
+			"configurePreset": "release",
+			"targets": ["tools", "engine", "maps", "models", "quakec"]
+		},
+		{
+			"name": "all-debug",
+			"configurePreset": "debug",
+			"targets": ["tools", "engine", "maps", "models", "quakec"]
+		},
+		{
+			"name": "tools",
+			"configurePreset": "default",
+			"targets": ["iqmtool", "fteqcc", "qbsp", "vis", "light"]
+		},
+		{
+			"name": "tools-release",
+			"configurePreset": "release",
+			"targets": ["iqmtool", "fteqcc", "qbsp", "vis", "light"]
+		},
+		{
+			"name": "tools-debug",
+			"configurePreset": "debug",
+			"targets": ["iqmtool", "fteqcc", "qbsp", "vis", "light"]
+		},
+		{
+			"name": "engine",
+			"configurePreset": "default",
+			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+		},
+		{
+			"name": "engine-release",
+			"configurePreset": "release",
+			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+		},
+		{
+			"name": "engine-debug",
+			"configurePreset": "debug",
+			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+		}
+	]
+}

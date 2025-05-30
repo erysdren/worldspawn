@@ -1,0 +1,71 @@
+# build folders
+build*/
+
+# cmake user presets
+CMakeUserPresets.json
+
+# local files
+untracked*/
+
+# external game data
+game/id1/
+game/lq1/
+
+# compiled packages
+game/worldspawn/*.pak
+game/worldspawn/*.pk3
+game/worldspawn/*.zip
+
+# compiled binaries
+game/bin/
+game/*.x86
+game/*.x86_64
+game/*.exe
+game/*.dll
+game/*.so
+
+# random files made by the engine
+game/*.log
+game/*.lst
+game/*.txt
+
+# user created files
+game/worldspawn/data/
+game/worldspawn/dlcache/
+game/worldspawn/saves/
+game/worldspawn/screenshots/
+game/worldspawn/autoexec.cfg
+game/worldspawn/config.cfg
+game/worldspawn/csqccore.txt
+game/worldspawn/ssqccore.txt
+
+# generated from build process
+game/worldspawn/maps/**/*.bsp
+game/worldspawn/models/**/*.iqm
+game/worldspawn/*.dat
+game/worldspawn/*.lno
+
+# generated from CMakeLists.txt
+source/shared/fteextensions.qc
+source/*.src
+
+# trenchbroom autosaves
+content/mapsrc/**/autosave
+
+# cleanup scripts
+content/mapsrc/**/*.sh
+content/mapsrc/**/*.bat
+
+# created by map compiler tools
+content/mapsrc/**/*.compile.map
+content/mapsrc/**/*.bsp
+content/mapsrc/**/*.log
+content/mapsrc/**/*.prt
+content/mapsrc/**/*.json
+content/mapsrc/**/*.bak
+
+# created by modeling tools
+content/modelsrc/**/*.blend1
+
+# trenchbroom config
+tools/trenchbroom_config/GameEngineProfiles.cfg

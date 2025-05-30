@@ -1,0 +1,1206 @@
+// Game: worldspawn
+// Format: Quake2 (Valve)
+// entity 0
+{
+"mapversion" "220"
+"classname" "worldspawn"
+"_tb_textures" "textures/dev;textures/liquids;textures/rowen;textures/tools"
+"_bounce" "2"
+"_bouncecolorscale" "1"
+"_bouncescale" "1"
+"_dirt" "1"
+"_phong" "1"
+"_minlight" "0.9"
+// brush 0
+{
+( -32 640 1024 ) ( -32 0 1024 ) ( -32 0 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 0 1024 ) ( 0 0 1024 ) ( 0 0 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 0 0 ) ( 0 640 0 ) ( -32 640 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 640 1024 ) ( 0 640 1024 ) ( 0 0 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 640 0 ) ( 0 640 1024 ) ( -32 640 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 0 1024 ) ( 0 640 1024 ) ( 0 640 0 ) dev/ref_30 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 1
+{
+( 0 0 1024 ) ( 0 -32 1024 ) ( 0 -32 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 -32 1024 ) ( 768 -32 1024 ) ( 768 -32 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 -32 0 ) ( 768 0 0 ) ( 0 0 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 0 1024 ) ( 768 0 1024 ) ( 768 -32 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 0 0 ) ( 768 0 1024 ) ( 0 0 1024 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 -32 1024 ) ( 768 0 1024 ) ( 768 0 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 2
+{
+( 0 672 1024 ) ( 0 640 1024 ) ( 0 640 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 640 1024 ) ( 768 640 1024 ) ( 768 640 0 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 640 0 ) ( 768 672 0 ) ( 0 672 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 672 1024 ) ( 768 672 1024 ) ( 768 640 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 672 0 ) ( 768 672 1024 ) ( 0 672 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 640 1024 ) ( 768 672 1024 ) ( 768 672 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 3
+{
+( 0 640 0 ) ( 0 0 0 ) ( 0 0 -32 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 0 0 ) ( 768 0 0 ) ( 768 0 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 -32 ) ( 768 640 -32 ) ( 0 640 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 640 0 ) ( 768 640 0 ) ( 768 0 0 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 640 -32 ) ( 768 640 0 ) ( 0 640 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 0 ) ( 768 640 0 ) ( 768 640 -32 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 4
+{
+( 0 640 1056 ) ( 0 0 1056 ) ( 0 0 1024 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 0 1056 ) ( 768 0 1056 ) ( 768 0 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 1024 ) ( 768 640 1024 ) ( 0 640 1024 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 640 1056 ) ( 768 640 1056 ) ( 768 0 1056 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 640 1024 ) ( 768 640 1056 ) ( 0 640 1056 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 1056 ) ( 768 640 1056 ) ( 768 640 1024 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 5
+{
+( 768 640 1024 ) ( 768 0 1024 ) ( 768 0 0 ) dev/ref_30 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 1024 ) ( 800 0 1024 ) ( 800 0 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 800 0 0 ) ( 800 640 0 ) ( 768 640 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 640 1024 ) ( 800 640 1024 ) ( 800 0 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 800 640 0 ) ( 800 640 1024 ) ( 768 640 1024 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 800 0 1024 ) ( 800 640 1024 ) ( 800 640 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 6
+{
+( 512 640 128 ) ( 512 0 128 ) ( 512 0 0 ) dev/ref_30 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 512 0 128 ) ( 768 0 128 ) ( 768 0 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 0 ) ( 768 640 0 ) ( 512 640 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 512 640 128 ) ( 768 640 128 ) ( 768 0 128 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 768 640 0 ) ( 768 640 128 ) ( 512 640 128 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 768 0 128 ) ( 768 640 128 ) ( 768 640 0 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 7
+{
+( 0 96 544 ) ( 0 32 672 ) ( 0 0 672 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 0 672 ) ( 32 0 672 ) ( 32 0 448 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 0 0 ) ( 32 96 0 ) ( 0 96 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 96 544 ) ( 32 96 544 ) ( 32 32 672 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 96 448 ) ( 32 96 544 ) ( 0 96 544 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 32 672 ) ( 128 96 544 ) ( 128 96 448 ) dev/ref_30 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 8
+{
+( 0 480 544 ) ( 0 576 672 ) ( 0 544 672 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 480 448 ) ( 0 480 544 ) ( 32 480 544 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 0 480 544 ) ( 32 544 672 ) ( 32 480 544 ) dev/ref_30 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 32 576 0 ) ( 0 480 0 ) ( 32 480 0 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 0 640 672 ) ( 32 640 448 ) ( 32 640 672 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 544 672 ) ( 128 480 448 ) ( 128 480 544 ) dev/ref_30 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 1
+{
+"classname" "info_player_start"
+"origin" "704 256 172"
+"angles" "0 180 0"
+}
+// entity 2
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan4"
+// brush 0
+{
+( 0 152 264 ) ( 0 168 248 ) ( 0 168 264 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 152 264 ) ( 0 152 248 ) ( 0 152 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 152 248 ) ( 80 168 248 ) ( 0 168 248 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 168 264 ) ( 0 152 264 ) ( 0 168 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 168 248 ) ( 80 168 264 ) ( 0 168 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 168 264 ) ( 80 152 248 ) ( 80 152 264 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 96 260 ) ( 0 224 252 ) ( 0 224 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 96 260 ) ( 0 96 252 ) ( 0 96 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 96 252 ) ( 64 224 252 ) ( 0 224 252 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 224 260 ) ( 0 96 260 ) ( 0 224 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 224 252 ) ( 64 224 260 ) ( 0 224 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 260 ) ( 64 96 252 ) ( 64 96 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 168 264 ) ( 32 169 264 ) ( 32 168 265 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 248 ) ( 47 152 248 ) ( 48 152 249 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 152 248 ) ( 48 153 248 ) ( 47 152 248 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 168 264 ) ( 31 168 264 ) ( 32 169 264 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 168 264 ) ( 32 168 265 ) ( 31 168 264 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 248 ) ( 48 152 249 ) ( 48 153 248 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 3
+{
+"classname" "phys_constraint"
+"origin" "0 160 256"
+"jointtype" "2"
+"target1" "fan4"
+"friction" "10"
+}
+// entity 4
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan5"
+// brush 0
+{
+( 0 280 264 ) ( 0 296 248 ) ( 0 296 264 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 280 264 ) ( 0 280 248 ) ( 0 280 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 280 248 ) ( 80 296 248 ) ( 0 296 248 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 296 264 ) ( 0 280 264 ) ( 0 296 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 296 248 ) ( 80 296 264 ) ( 0 296 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 296 264 ) ( 80 280 248 ) ( 80 280 264 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 224 260 ) ( 0 352 252 ) ( 0 352 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 260 ) ( 0 224 252 ) ( 0 224 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 224 252 ) ( 64 352 252 ) ( 0 352 252 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 352 260 ) ( 0 224 260 ) ( 0 352 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 352 252 ) ( 64 352 260 ) ( 0 352 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 260 ) ( 64 224 252 ) ( 64 224 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 296 264 ) ( 32 297 264 ) ( 32 296 265 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 248 ) ( 47 280 248 ) ( 48 280 249 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 280 248 ) ( 48 281 248 ) ( 47 280 248 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 296 264 ) ( 31 296 264 ) ( 32 297 264 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 296 264 ) ( 32 296 265 ) ( 31 296 264 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 248 ) ( 48 280 249 ) ( 48 281 248 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 5
+{
+"classname" "phys_constraint"
+"origin" "0 288 256"
+"jointtype" "2"
+"target1" "fan5"
+"friction" "10"
+}
+// entity 6
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan6"
+// brush 0
+{
+( 0 408 264 ) ( 0 424 248 ) ( 0 424 264 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 408 264 ) ( 0 408 248 ) ( 0 408 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 408 248 ) ( 80 424 248 ) ( 0 424 248 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 424 264 ) ( 0 408 264 ) ( 0 424 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 424 248 ) ( 80 424 264 ) ( 0 424 264 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 424 264 ) ( 80 408 248 ) ( 80 408 264 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 352 260 ) ( 0 480 252 ) ( 0 480 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 260 ) ( 0 352 252 ) ( 0 352 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 352 252 ) ( 64 480 252 ) ( 0 480 252 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 480 260 ) ( 0 352 260 ) ( 0 480 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 480 252 ) ( 64 480 260 ) ( 0 480 260 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 480 260 ) ( 64 352 252 ) ( 64 352 260 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 424 264 ) ( 32 425 264 ) ( 32 424 265 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 248 ) ( 47 408 248 ) ( 48 408 249 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 408 248 ) ( 48 409 248 ) ( 47 408 248 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 424 264 ) ( 31 424 264 ) ( 32 425 264 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 424 264 ) ( 32 424 265 ) ( 31 424 264 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 248 ) ( 48 408 249 ) ( 48 409 248 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 7
+{
+"classname" "phys_constraint"
+"origin" "0 416 256"
+"jointtype" "2"
+"target1" "fan6"
+"friction" "10"
+}
+// entity 8
+{
+"classname" "phys_constraint"
+"origin" "0 416 128"
+"jointtype" "2"
+"target1" "fan3"
+"friction" "10"
+}
+// entity 9
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan3"
+// brush 0
+{
+( 0 352 132 ) ( 0 480 124 ) ( 0 480 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 132 ) ( 0 352 124 ) ( 0 352 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 352 124 ) ( 64 480 124 ) ( 0 480 124 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 480 132 ) ( 0 352 132 ) ( 0 480 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 480 124 ) ( 64 480 132 ) ( 0 480 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 480 132 ) ( 64 352 124 ) ( 64 352 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 408 136 ) ( 0 424 120 ) ( 0 424 136 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 408 136 ) ( 0 408 120 ) ( 0 408 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 408 120 ) ( 80 424 120 ) ( 0 424 120 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 424 136 ) ( 0 408 136 ) ( 0 424 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 424 120 ) ( 80 424 136 ) ( 0 424 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 424 136 ) ( 80 408 120 ) ( 80 408 136 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 424 136 ) ( 32 425 136 ) ( 32 424 137 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 120 ) ( 47 408 120 ) ( 48 408 121 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 408 120 ) ( 48 409 120 ) ( 47 408 120 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 424 136 ) ( 31 424 136 ) ( 32 425 136 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 424 136 ) ( 32 424 137 ) ( 31 424 136 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 120 ) ( 48 408 121 ) ( 48 409 120 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 10
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan2"
+// brush 0
+{
+( 0 224 132 ) ( 0 352 124 ) ( 0 352 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 132 ) ( 0 224 124 ) ( 0 224 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 224 124 ) ( 64 352 124 ) ( 0 352 124 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 352 132 ) ( 0 224 132 ) ( 0 352 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 352 124 ) ( 64 352 132 ) ( 0 352 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 132 ) ( 64 224 124 ) ( 64 224 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 280 136 ) ( 0 296 120 ) ( 0 296 136 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 280 136 ) ( 0 280 120 ) ( 0 280 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 280 120 ) ( 80 296 120 ) ( 0 296 120 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 296 136 ) ( 0 280 136 ) ( 0 296 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 296 120 ) ( 80 296 136 ) ( 0 296 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 296 136 ) ( 80 280 120 ) ( 80 280 136 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 296 136 ) ( 32 297 136 ) ( 32 296 137 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 120 ) ( 47 280 120 ) ( 48 280 121 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 280 120 ) ( 48 281 120 ) ( 47 280 120 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 296 136 ) ( 31 296 136 ) ( 32 297 136 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 296 136 ) ( 32 296 137 ) ( 31 296 136 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 120 ) ( 48 280 121 ) ( 48 281 120 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 11
+{
+"classname" "phys_constraint"
+"origin" "0 288 128"
+"jointtype" "2"
+"target1" "fan2"
+"friction" "10"
+}
+// entity 12
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan1"
+// brush 0
+{
+( 0 152 136 ) ( 0 168 120 ) ( 0 168 136 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 152 136 ) ( 0 152 120 ) ( 0 152 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 152 120 ) ( 80 168 120 ) ( 0 168 120 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 168 136 ) ( 0 152 136 ) ( 0 168 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 168 120 ) ( 80 168 136 ) ( 0 168 136 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 168 136 ) ( 80 152 120 ) ( 80 152 136 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 96 132 ) ( 0 224 124 ) ( 0 224 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 96 132 ) ( 0 96 124 ) ( 0 96 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 96 124 ) ( 64 224 124 ) ( 0 224 124 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 224 132 ) ( 0 96 132 ) ( 0 224 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 224 124 ) ( 64 224 132 ) ( 0 224 132 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 132 ) ( 64 96 124 ) ( 64 96 132 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 168 136 ) ( 32 169 136 ) ( 32 168 137 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 120 ) ( 47 152 120 ) ( 48 152 121 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 152 120 ) ( 48 153 120 ) ( 47 152 120 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 168 136 ) ( 31 168 136 ) ( 32 169 136 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 168 136 ) ( 32 168 137 ) ( 31 168 136 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 120 ) ( 48 152 121 ) ( 48 153 120 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 13
+{
+"classname" "phys_constraint"
+"origin" "0 160 128"
+"jointtype" "2"
+"target1" "fan1"
+"friction" "10"
+}
+// entity 14
+{
+"classname" "phys_constraint"
+"origin" "0 416 384"
+"jointtype" "2"
+"target1" "fan9"
+"friction" "10"
+}
+// entity 15
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan9"
+// brush 0
+{
+( 0 352 388 ) ( 0 480 380 ) ( 0 480 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 388 ) ( 0 352 380 ) ( 0 352 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 352 380 ) ( 64 480 380 ) ( 0 480 380 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 480 388 ) ( 0 352 388 ) ( 0 480 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 480 380 ) ( 64 480 388 ) ( 0 480 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 480 388 ) ( 64 352 380 ) ( 64 352 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 408 392 ) ( 0 424 376 ) ( 0 424 392 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 408 392 ) ( 0 408 376 ) ( 0 408 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 408 376 ) ( 80 424 376 ) ( 0 424 376 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 424 392 ) ( 0 408 392 ) ( 0 424 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 424 376 ) ( 80 424 392 ) ( 0 424 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 424 392 ) ( 80 408 376 ) ( 80 408 392 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 424 392 ) ( 32 425 392 ) ( 32 424 393 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 376 ) ( 47 408 376 ) ( 48 408 377 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 408 376 ) ( 48 409 376 ) ( 47 408 376 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 424 392 ) ( 31 424 392 ) ( 32 425 392 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 424 392 ) ( 32 424 393 ) ( 31 424 392 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 376 ) ( 48 408 377 ) ( 48 409 376 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 16
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan8"
+// brush 0
+{
+( 0 224 388 ) ( 0 352 380 ) ( 0 352 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 388 ) ( 0 224 380 ) ( 0 224 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 224 380 ) ( 64 352 380 ) ( 0 352 380 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 352 388 ) ( 0 224 388 ) ( 0 352 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 352 380 ) ( 64 352 388 ) ( 0 352 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 388 ) ( 64 224 380 ) ( 64 224 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 280 392 ) ( 0 296 376 ) ( 0 296 392 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 280 392 ) ( 0 280 376 ) ( 0 280 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 280 376 ) ( 80 296 376 ) ( 0 296 376 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 296 392 ) ( 0 280 392 ) ( 0 296 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 296 376 ) ( 80 296 392 ) ( 0 296 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 296 392 ) ( 80 280 376 ) ( 80 280 392 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 296 392 ) ( 32 297 392 ) ( 32 296 393 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 376 ) ( 47 280 376 ) ( 48 280 377 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 280 376 ) ( 48 281 376 ) ( 47 280 376 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 296 392 ) ( 31 296 392 ) ( 32 297 392 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 296 392 ) ( 32 296 393 ) ( 31 296 392 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 376 ) ( 48 280 377 ) ( 48 281 376 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 17
+{
+"classname" "phys_constraint"
+"origin" "0 288 384"
+"jointtype" "2"
+"target1" "fan8"
+"friction" "10"
+}
+// entity 18
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan7"
+// brush 0
+{
+( 0 152 392 ) ( 0 168 376 ) ( 0 168 392 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 152 392 ) ( 0 152 376 ) ( 0 152 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 152 376 ) ( 80 168 376 ) ( 0 168 376 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 168 392 ) ( 0 152 392 ) ( 0 168 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 168 376 ) ( 80 168 392 ) ( 0 168 392 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 168 392 ) ( 80 152 376 ) ( 80 152 392 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 96 388 ) ( 0 224 380 ) ( 0 224 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 96 388 ) ( 0 96 380 ) ( 0 96 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 96 380 ) ( 64 224 380 ) ( 0 224 380 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 224 388 ) ( 0 96 388 ) ( 0 224 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 224 380 ) ( 64 224 388 ) ( 0 224 388 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 388 ) ( 64 96 380 ) ( 64 96 388 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 168 392 ) ( 32 169 392 ) ( 32 168 393 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 376 ) ( 47 152 376 ) ( 48 152 377 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 152 376 ) ( 48 153 376 ) ( 47 152 376 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 168 392 ) ( 31 168 392 ) ( 32 169 392 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 168 392 ) ( 32 168 393 ) ( 31 168 392 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 376 ) ( 48 152 377 ) ( 48 153 376 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 19
+{
+"classname" "phys_constraint"
+"origin" "0 160 384"
+"jointtype" "2"
+"target1" "fan7"
+"friction" "10"
+}
+// entity 20
+{
+"classname" "phys_box"
+"origin" "32 96 704"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 21
+{
+"classname" "phys_box"
+"origin" "32 160 672"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 22
+{
+"classname" "phys_box"
+"origin" "32 200 688"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 23
+{
+"classname" "phys_box"
+"origin" "32 240 720"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 24
+{
+"classname" "phys_box"
+"origin" "32 320 736"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 25
+{
+"classname" "phys_box"
+"origin" "32 368 752"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 26
+{
+"classname" "phys_box"
+"origin" "32 384 704"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 27
+{
+"classname" "phys_box"
+"origin" "32 424 720"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 28
+{
+"classname" "phys_box"
+"origin" "32 464 752"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 29
+{
+"classname" "phys_box"
+"origin" "32 448 800"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 30
+{
+"classname" "phys_constraint"
+"origin" "0 416 512"
+"jointtype" "2"
+"target1" "fan12"
+"friction" "10"
+}
+// entity 31
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan12"
+// brush 0
+{
+( 0 352 516 ) ( 0 480 508 ) ( 0 480 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 516 ) ( 0 352 508 ) ( 0 352 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 352 508 ) ( 64 480 508 ) ( 0 480 508 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 480 516 ) ( 0 352 516 ) ( 0 480 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 480 508 ) ( 64 480 516 ) ( 0 480 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 480 516 ) ( 64 352 508 ) ( 64 352 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 408 520 ) ( 0 424 504 ) ( 0 424 520 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 408 520 ) ( 0 408 504 ) ( 0 408 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 408 504 ) ( 80 424 504 ) ( 0 424 504 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 424 520 ) ( 0 408 520 ) ( 0 424 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 424 504 ) ( 80 424 520 ) ( 0 424 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 424 520 ) ( 80 408 504 ) ( 80 408 520 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 424 520 ) ( 32 425 520 ) ( 32 424 521 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 504 ) ( 47 408 504 ) ( 48 408 505 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 408 504 ) ( 48 409 504 ) ( 47 408 504 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 424 520 ) ( 31 424 520 ) ( 32 425 520 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 424 520 ) ( 32 424 521 ) ( 31 424 520 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 408 504 ) ( 48 408 505 ) ( 48 409 504 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 32
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan11"
+// brush 0
+{
+( 0 224 516 ) ( 0 352 508 ) ( 0 352 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 516 ) ( 0 224 508 ) ( 0 224 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 224 508 ) ( 64 352 508 ) ( 0 352 508 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 352 516 ) ( 0 224 516 ) ( 0 352 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 352 508 ) ( 64 352 516 ) ( 0 352 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 352 516 ) ( 64 224 508 ) ( 64 224 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 280 520 ) ( 0 296 504 ) ( 0 296 520 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 280 520 ) ( 0 280 504 ) ( 0 280 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 280 504 ) ( 80 296 504 ) ( 0 296 504 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 296 520 ) ( 0 280 520 ) ( 0 296 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 296 504 ) ( 80 296 520 ) ( 0 296 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 296 520 ) ( 80 280 504 ) ( 80 280 520 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 296 520 ) ( 32 297 520 ) ( 32 296 521 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 504 ) ( 47 280 504 ) ( 48 280 505 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 280 504 ) ( 48 281 504 ) ( 47 280 504 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 296 520 ) ( 31 296 520 ) ( 32 297 520 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 296 520 ) ( 32 296 521 ) ( 31 296 520 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 280 504 ) ( 48 280 505 ) ( 48 281 504 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 33
+{
+"classname" "phys_constraint"
+"origin" "0 288 512"
+"jointtype" "2"
+"target1" "fan11"
+"friction" "10"
+}
+// entity 34
+{
+"classname" "func_physbox"
+"mass" "10"
+"targetname" "fan10"
+// brush 0
+{
+( 0 152 520 ) ( 0 168 504 ) ( 0 168 520 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 80 152 520 ) ( 0 152 504 ) ( 0 152 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 152 504 ) ( 80 168 504 ) ( 0 168 504 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 80 168 520 ) ( 0 152 520 ) ( 0 168 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 168 504 ) ( 80 168 520 ) ( 0 168 520 ) dev/grey002a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 80 168 520 ) ( 80 152 504 ) ( 80 152 520 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 1
+{
+( 0 96 516 ) ( 0 224 508 ) ( 0 224 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 96 516 ) ( 0 96 508 ) ( 0 96 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+( 0 96 508 ) ( 64 224 508 ) ( 0 224 508 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 64 224 516 ) ( 0 96 516 ) ( 0 224 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 0 224 508 ) ( 64 224 516 ) ( 0 224 516 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 -64 ] 90 1 1
+( 64 224 516 ) ( 64 96 508 ) ( 64 96 516 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 -64 ] 270 1 1
+}
+// brush 2
+{
+( 32 168 520 ) ( 32 169 520 ) ( 32 168 521 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 504 ) ( 47 152 504 ) ( 48 152 505 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 270 1 1
+( 48 152 504 ) ( 48 153 504 ) ( 47 152 504 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 90 1 1
+( 32 168 520 ) ( 31 168 520 ) ( 32 169 520 ) tools/origin [ 1 0 0 0 ] [ 0 -1 0 0 ] 270 1 1
+( 32 168 520 ) ( 32 168 521 ) ( 31 168 520 ) tools/origin [ 1 0 0 0 ] [ 0 0 -1 0 ] 90 1 1
+( 48 152 504 ) ( 48 152 505 ) ( 48 153 504 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 270 1 1
+}
+}
+// entity 35
+{
+"classname" "phys_constraint"
+"origin" "0 160 512"
+"jointtype" "2"
+"target1" "fan10"
+"friction" "10"
+}
+// entity 36
+{
+"classname" "phys_box"
+"origin" "32 296 816"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 37
+{
+"classname" "phys_box"
+"origin" "32 336 848"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 38
+{
+"classname" "phys_box"
+"origin" "32 320 896"
+"angle" "0"
+"spawnflags" "1"
+"model" "models/box.iqm"
+}
+// entity 39
+{
+"classname" "func_group"
+"_tb_type" "_tb_layer"
+"_tb_name" "big"
+"_tb_id" "1"
+"_tb_layer_sort_index" "0"
+"_tb_layer_hidden" "1"
+"_tb_layer_omit_from_export" "1"
+}
+// entity 40
+{
+"classname" "phys_box"
+"origin" "32 -32 160"
+"_tb_layer" "1"
+}
+// entity 41
+{
+"classname" "phys_box"
+"origin" "-96 -32 160"
+"_tb_layer" "1"
+}
+// entity 42
+{
+"classname" "phys_box"
+"origin" "-96 32 160"
+"_tb_layer" "1"
+}
+// entity 43
+{
+"classname" "phys_box"
+"origin" "32 32 160"
+"_tb_layer" "1"
+}
+// entity 44
+{
+"classname" "phys_box"
+"origin" "-96 96 160"
+"_tb_layer" "1"
+}
+// entity 45
+{
+"classname" "phys_box"
+"origin" "32 96 160"
+"_tb_layer" "1"
+}
+// entity 46
+{
+"classname" "phys_box"
+"origin" "-32 96 160"
+"_tb_layer" "1"
+}
+// entity 47
+{
+"classname" "phys_box"
+"origin" "-32 32 160"
+"_tb_layer" "1"
+}
+// entity 48
+{
+"classname" "phys_box"
+"origin" "-32 -32 160"
+"_tb_layer" "1"
+}
+// entity 49
+{
+"classname" "phys_sphere"
+"origin" "32 96 224"
+"_tb_layer" "1"
+}
+// entity 50
+{
+"classname" "phys_sphere"
+"origin" "32 -32 224"
+"_tb_layer" "1"
+}
+// entity 51
+{
+"classname" "phys_sphere"
+"origin" "-32 -32 224"
+"_tb_layer" "1"
+}
+// entity 52
+{
+"classname" "phys_sphere"
+"origin" "-96 -32 224"
+"_tb_layer" "1"
+}
+// entity 53
+{
+"classname" "phys_sphere"
+"origin" "-96 32 224"
+"_tb_layer" "1"
+}
+// entity 54
+{
+"classname" "phys_sphere"
+"origin" "-32 32 224"
+"_tb_layer" "1"
+}
+// entity 55
+{
+"classname" "phys_sphere"
+"origin" "-96 96 224"
+"_tb_layer" "1"
+}
+// entity 56
+{
+"classname" "phys_sphere"
+"origin" "-32 96 224"
+"_tb_layer" "1"
+}
+// entity 57
+{
+"classname" "phys_sphere"
+"origin" "32 32 224"
+"_tb_layer" "1"
+}
+// entity 58
+{
+"classname" "phys_box"
+"origin" "32 96 96"
+"_tb_layer" "1"
+}
+// entity 59
+{
+"classname" "phys_box"
+"origin" "32 -32 96"
+"_tb_layer" "1"
+}
+// entity 60
+{
+"classname" "phys_box"
+"origin" "-32 -32 96"
+"_tb_layer" "1"
+}
+// entity 61
+{
+"classname" "phys_box"
+"origin" "-96 -32 96"
+"_tb_layer" "1"
+}
+// entity 62
+{
+"classname" "phys_box"
+"origin" "-96 32 96"
+"_tb_layer" "1"
+}
+// entity 63
+{
+"classname" "phys_box"
+"origin" "-32 32 96"
+"_tb_layer" "1"
+}
+// entity 64
+{
+"classname" "phys_box"
+"origin" "-96 96 96"
+"_tb_layer" "1"
+}
+// entity 65
+{
+"classname" "phys_box"
+"origin" "-32 96 96"
+"_tb_layer" "1"
+}
+// entity 66
+{
+"classname" "phys_box"
+"origin" "32 32 96"
+"_tb_layer" "1"
+}
+// entity 67
+{
+"classname" "phys_box"
+"origin" "32 -224 160"
+"_tb_layer" "1"
+}
+// entity 68
+{
+"classname" "phys_box"
+"origin" "-96 -224 160"
+"_tb_layer" "1"
+}
+// entity 69
+{
+"classname" "phys_box"
+"origin" "-96 -160 160"
+"_tb_layer" "1"
+}
+// entity 70
+{
+"classname" "phys_box"
+"origin" "32 -160 160"
+"_tb_layer" "1"
+}
+// entity 71
+{
+"classname" "phys_box"
+"origin" "-96 -96 160"
+"_tb_layer" "1"
+}
+// entity 72
+{
+"classname" "phys_box"
+"origin" "32 -96 160"
+"_tb_layer" "1"
+}
+// entity 73
+{
+"classname" "phys_box"
+"origin" "-32 -96 160"
+"_tb_layer" "1"
+}
+// entity 74
+{
+"classname" "phys_box"
+"origin" "-32 -160 160"
+"_tb_layer" "1"
+}
+// entity 75
+{
+"classname" "phys_box"
+"origin" "-32 -224 160"
+"_tb_layer" "1"
+}
+// entity 76
+{
+"classname" "phys_sphere"
+"origin" "32 -96 224"
+"_tb_layer" "1"
+}
+// entity 77
+{
+"classname" "phys_sphere"
+"origin" "32 -224 224"
+"_tb_layer" "1"
+}
+// entity 78
+{
+"classname" "phys_sphere"
+"origin" "-32 -224 224"
+"_tb_layer" "1"
+}
+// entity 79
+{
+"classname" "phys_sphere"
+"origin" "-96 -224 224"
+"_tb_layer" "1"
+}
+// entity 80
+{
+"classname" "phys_sphere"
+"origin" "-96 -160 224"
+"_tb_layer" "1"
+}
+// entity 81
+{
+"classname" "phys_sphere"
+"origin" "-32 -160 224"
+"_tb_layer" "1"
+}
+// entity 82
+{
+"classname" "phys_sphere"
+"origin" "-96 -96 224"
+"_tb_layer" "1"
+}
+// entity 83
+{
+"classname" "phys_sphere"
+"origin" "-32 -96 224"
+"_tb_layer" "1"
+}
+// entity 84
+{
+"classname" "phys_sphere"
+"origin" "32 -160 224"
+"_tb_layer" "1"
+}
+// entity 85
+{
+"classname" "phys_box"
+"origin" "32 -96 96"
+"_tb_layer" "1"
+}
+// entity 86
+{
+"classname" "phys_box"
+"origin" "32 -224 96"
+"_tb_layer" "1"
+}
+// entity 87
+{
+"classname" "phys_box"
+"origin" "-32 -224 96"
+"_tb_layer" "1"
+}
+// entity 88
+{
+"classname" "phys_box"
+"origin" "-96 -224 96"
+"_tb_layer" "1"
+}
+// entity 89
+{
+"classname" "phys_box"
+"origin" "-96 -160 96"
+"_tb_layer" "1"
+}
+// entity 90
+{
+"classname" "phys_box"
+"origin" "-32 -160 96"
+"_tb_layer" "1"
+}
+// entity 91
+{
+"classname" "phys_box"
+"origin" "-96 -96 96"
+"_tb_layer" "1"
+}
+// entity 92
+{
+"classname" "phys_box"
+"origin" "-32 -96 96"
+"_tb_layer" "1"
+}
+// entity 93
+{
+"classname" "phys_box"
+"origin" "32 -160 96"
+"_tb_layer" "1"
+}
+// entity 94
+{
+"classname" "phys_box"
+"origin" "-160 -32 160"
+"_tb_layer" "1"
+}
+// entity 95
+{
+"classname" "phys_box"
+"origin" "-160 32 160"
+"_tb_layer" "1"
+}
+// entity 96
+{
+"classname" "phys_box"
+"origin" "-160 96 160"
+"_tb_layer" "1"
+}
+// entity 97
+{
+"classname" "phys_sphere"
+"origin" "-160 -32 224"
+"_tb_layer" "1"
+}
+// entity 98
+{
+"classname" "phys_sphere"
+"origin" "-160 32 224"
+"_tb_layer" "1"
+}
+// entity 99
+{
+"classname" "phys_sphere"
+"origin" "-160 96 224"
+"_tb_layer" "1"
+}
+// entity 100
+{
+"classname" "phys_box"
+"origin" "-160 -32 96"
+"_tb_layer" "1"
+}
+// entity 101
+{
+"classname" "phys_box"
+"origin" "-160 32 96"
+"_tb_layer" "1"
+}
+// entity 102
+{
+"classname" "phys_box"
+"origin" "-160 96 96"
+"_tb_layer" "1"
+}
+// entity 103
+{
+"classname" "phys_box"
+"origin" "-160 -224 160"
+"_tb_layer" "1"
+}
+// entity 104
+{
+"classname" "phys_box"
+"origin" "-160 -160 160"
+"_tb_layer" "1"
+}
+// entity 105
+{
+"classname" "phys_box"
+"origin" "-160 -96 160"
+"_tb_layer" "1"
+}
+// entity 106
+{
+"classname" "phys_sphere"
+"origin" "-160 -224 224"
+"_tb_layer" "1"
+}
+// entity 107
+{
+"classname" "phys_sphere"
+"origin" "-160 -160 224"
+"_tb_layer" "1"
+}
+// entity 108
+{
+"classname" "phys_sphere"
+"origin" "-160 -96 224"
+"_tb_layer" "1"
+}
+// entity 109
+{
+"classname" "phys_box"
+"origin" "-160 -224 96"
+"_tb_layer" "1"
+}
+// entity 110
+{
+"classname" "phys_box"
+"origin" "-160 -160 96"
+"_tb_layer" "1"
+}
+// entity 111
+{
+"classname" "phys_box"
+"origin" "-160 -96 96"
+"_tb_layer" "1"
+}
+// entity 112
+{
+"classname" "phys_box"
+"origin" "-96 160 160"
+"_tb_layer" "1"
+}
+// entity 113
+{
+"classname" "phys_box"
+"origin" "32 160 160"
+"_tb_layer" "1"
+}
+// entity 114
+{
+"classname" "phys_box"
+"origin" "-32 160 160"
+"_tb_layer" "1"
+}
+// entity 115
+{
+"classname" "phys_sphere"
+"origin" "32 160 224"
+"_tb_layer" "1"
+}
+// entity 116
+{
+"classname" "phys_sphere"
+"origin" "-96 160 224"
+"_tb_layer" "1"
+}
+// entity 117
+{
+"classname" "phys_sphere"
+"origin" "-32 160 224"
+"_tb_layer" "1"
+}
+// entity 118
+{
+"classname" "phys_box"
+"origin" "32 160 96"
+"_tb_layer" "1"
+}
+// entity 119
+{
+"classname" "phys_box"
+"origin" "-96 160 96"
+"_tb_layer" "1"
+}
+// entity 120
+{
+"classname" "phys_box"
+"origin" "-32 160 96"
+"_tb_layer" "1"
+}
+// entity 121
+{
+"classname" "phys_box"
+"origin" "-160 160 160"
+"_tb_layer" "1"
+}
+// entity 122
+{
+"classname" "phys_sphere"
+"origin" "-160 160 224"
+"_tb_layer" "1"
+}
+// entity 123
+{
+"classname" "phys_box"
+"origin" "-160 160 96"
+"_tb_layer" "1"
+}

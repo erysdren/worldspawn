@@ -6,3 +6,12 @@ models/classic64/pvc_pipe
 		rgbgen lightingdiffuse
 	}
 }
+
+models/rowen/metalsheet01
+{
+	cull none
+	{
+		map textures/models/rowen/metalsheet01.png
+		rgbgen lightingdiffuse
+	}
+}

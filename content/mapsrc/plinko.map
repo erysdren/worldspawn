@@ -472,75 +472,60 @@
 {
 "classname" "phys_box"
 "origin" "32 96 704"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 21
 {
 "classname" "phys_box"
 "origin" "32 160 672"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 22
 {
 "classname" "phys_box"
 "origin" "32 200 688"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 23
 {
 "classname" "phys_box"
 "origin" "32 240 720"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 24
 {
 "classname" "phys_box"
 "origin" "32 320 736"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 25
 {
 "classname" "phys_box"
 "origin" "32 368 752"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 26
 {
 "classname" "phys_box"
 "origin" "32 384 704"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 27
 {
 "classname" "phys_box"
 "origin" "32 424 720"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 28
 {
 "classname" "phys_box"
 "origin" "32 464 752"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 29
 {
 "classname" "phys_box"
 "origin" "32 448 800"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 30
@@ -670,24 +655,18 @@
 {
 "classname" "phys_box"
 "origin" "32 296 816"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 37
 {
 "classname" "phys_box"
 "origin" "32 336 848"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 38
 {
 "classname" "phys_box"
 "origin" "32 320 896"
-"angle" "0"
-"spawnflags" "1"
 "model" "models/box.iqm"
 }
 // entity 39

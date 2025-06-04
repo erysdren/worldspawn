@@ -135,8 +135,8 @@ add_custom_target(fteextensions DEPENDS ${PROJECT_SOURCE_DIR}/source/shared/ftee
 add_custom_target(quakec)
 add_dependencies(quakec fteextensions)
 
-# progs.dat (disabled for now)
 if(0)
+# progs.dat
 target_progs(quakec progs
 	SOURCES
 		shared/fteextensions.qc
@@ -165,7 +165,6 @@ target_progs(quakec progs
 		-Ffastarrays
 		-Flo
 )
-endif()
 
 # csprogs.dat
 target_progs(quakec csprogs
@@ -185,6 +184,7 @@ target_progs(quakec csprogs
 		-Ffastarrays
 		-Flo
 )
+endif()
 
 # worldspawn.dat
 target_progs(quakec worldspawn

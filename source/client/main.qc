@@ -29,6 +29,13 @@ static var entity viewmodel = NULL;
 static var bool skyroom_set = false;
 static var vector skyroom_pos = [0, 0, 0];
 
+void init(float prevprogs)
+{
+#ifdef ADDON
+	addon_init();
+#endif
+}
+
 void CSQC_RendererRestarted(string rendererdescription)
 {
 

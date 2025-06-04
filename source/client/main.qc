@@ -19,10 +19,12 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see https://www.gnu.org/licenses/
 */
 
+#if 0
 static var bool physgun_active = false;
 static var spline_t *physgun_spline = NULL;
 
 static var entity viewmodel = NULL;
+#endif
 
 void CSQC_RendererRestarted(string rendererdescription)
 {
@@ -31,6 +33,7 @@ void CSQC_RendererRestarted(string rendererdescription)
 
 void CSQC_Init(float apilevel, string enginename, float engineversion)
 {
+#if 0
 	// setup spline
 	physgun_spline = spline_alloc(4, 0, 0, 0);
 
@@ -48,13 +51,16 @@ void CSQC_Init(float apilevel, string enginename, float engineversion)
 	viewmodel.effects |= EF_NOSHADOW;
 	precache_model("progs/v_light.mdl");
 	setmodel(viewmodel, "progs/v_light.mdl");
+#endif
 }
 
 void CSQC_Shutdown()
 {
+#if 0
 	spline_free(physgun_spline);
 
 	remove(viewmodel);
+#endif
 }
 
 void CSQC_UpdateView(float vwidth, float vheight, float notmenu)
@@ -69,6 +75,7 @@ void CSQC_UpdateView(float vwidth, float vheight, float notmenu)
 
 	addentities(MASK_ENGINE | MASK_VIEWMODEL);
 
+#if 0
 	// draw physgun beam
 	if (physgun_active)
 	{
@@ -124,11 +131,14 @@ void CSQC_UpdateView(float vwidth, float vheight, float notmenu)
 		R_PolygonVertex(dst - v_forward * sz + v_right * sz - v_up * sz, [0, 1], [1, 1, 1], 1);
 		R_EndPolygon();
 	}
+#endif
 
 	renderscene();
 
+#if 0
 	vector sz = drawgetimagesize("gfx/phys.png");
-	// drawpic(vsize - sz + [0, 32], "gfx/phys.png", sz);
+	drawpic(vsize - sz + [0, 32], "gfx/phys.png", sz);
+#endif
 
 	chat_draw(vsize);
 }
@@ -155,11 +165,13 @@ void CSQC_Parse_Event()
 {
 	switch (readbyte())
 	{
+#if 0
 		case EVENT_PHYSGUN_STATE:
 		{
 			physgun_active = readbyte();
 			break;
 		}
+#endif
 
 		default:
 		{

@@ -4,7 +4,7 @@
 {
 "mapversion" "220"
 "classname" "worldspawn"
-"_tb_textures" "textures/dev;textures/liquids;textures/rowen;textures/tools"
+"_tb_textures" "textures/animated;textures/dev;textures/liquids;textures/rowen;textures/tools"
 "_bounce" "2"
 "_bouncecolorscale" "1"
 "_bouncescale" "1"
@@ -3271,9 +3271,14 @@
 }
 // entity 217
 {
-"classname" "func_group"
-"_tb_type" "_tb_layer"
-"_tb_name" "clips"
-"_tb_id" "8"
-"_tb_layer_sort_index" "0"
+"classname" "func_brush"
+// brush 0
+{
+( -840 -1120 -512 ) ( -840 -1119 -512 ) ( -840 -1120 -511 ) tools/nodraw [ 0 -1 0 32 ] [ 0 0 -1 0 ] 270 1 1
+( -848 -1120 -512 ) ( -848 -1120 -511 ) ( -847 -1120 -512 ) tools/nodraw [ 1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
+( -848 -1120 288 ) ( -847 -1120 288 ) ( -848 -1119 288 ) tools/nodraw [ -1 0 0 -16 ] [ 0 -1 0 32 ] 180 1 1
+( -832 -848 384 ) ( -832 -847 384 ) ( -831 -848 384 ) tools/nodraw [ 1 0 0 16 ] [ 0 -1 0 32 ] 270 1 1
+( -832 -560 512 ) ( -831 -560 512 ) ( -832 -560 513 ) tools/nodraw [ -1 0 0 -16 ] [ 0 0 -1 0 ] 0 1 1
+( -832 -848 512 ) ( -832 -848 513 ) ( -832 -847 512 ) animated/shambler_plinko [ 0 1 0 0 ] [ 0 0 -1 69 ] 0 1 1
+}
 }

@@ -219,7 +219,7 @@ target_progs(quakec worldspawn
 # maps
 #
 
-function(target_q2bsp target name)
+function(target_bsp target name)
 	file(MAKE_DIRECTORY "${PROJECT_SOURCE_DIR}/game/worldspawn/maps/")
 	cmake_parse_arguments(PARSE_ARGV 1 ARG "" "" "BSPFLAGS;VISFLAGS;LIGHTFLAGS")
 	add_custom_command(
@@ -239,7 +239,7 @@ function(target_q2bsp target name)
 endfunction()
 
 add_custom_target(maps)
-target_q2bsp(maps testroom
+target_bsp(maps testroom
 	BSPFLAGS
 		-threads ${MAP_COMPILER_THREADS}
 		-q2bsp

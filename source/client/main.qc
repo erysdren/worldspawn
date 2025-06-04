@@ -196,7 +196,6 @@ float CSQC_InputEvent(float evtype, float scanx, float chary, float devid)
 	return FALSE;
 }
 
-
 void CSQC_Parse_Print(string printmsg, float printlvl)
 {
 	float lvl = cvar("msg");

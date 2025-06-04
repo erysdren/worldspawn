@@ -203,6 +203,7 @@ target_progs(quakec worldspawn
 		server/entities/phys_springbox.qc
 		server/entities/prop_physics.qc
 		server/entities/prop_static.qc
+		server/entities/sky_camera.qc
 	FLAGS
 		-DNQSSQC
 		-DSERVER

@@ -19,39 +19,33 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see https://www.gnu.org/licenses/
 */
 
-#define NULL __NULL__
-
-#define DEG2RAD(x) ((x) * M_PI/180.0f)
-#define RAD2DEG(x) ((x) * 180.0f/M_PI)
-
-#define printf(...) print(sprintf(__VA_ARGS__))
-
-typedef enum { false, true } bool;
-
-// multicast events
-enum {
-	EVENT_PHYSGUN_STATE = 1
+class sky_camera {
+	void() sky_camera;
+	virtual float(entity to, float sendflags) SendEntity;
 };
 
-// shared entity types
-enum {
-	SHAREDENT_SKY_CAMERA
-};
-
-// shared entity sendflags
-enumflags {
-	SENDFLAG_ORIGIN, // 1
-	SENDFLAG_ANGLES, // 2
-	SENDFLAG_UNUSED3, // 4
-	SENDFLAG_UNUSED4, // 8
-	SENDFLAG_UNUSED5, // 16
-	SENDFLAG_UNUSED6, // 32
-	SENDFLAG_UNUSED7, // 64
-	SENDFLAG_MODELINDEX // 128
-};
-
-float vlen2d(vector v)
+void sky_camera::sky_camera()
 {
-	v.z = 0;
-	return vlen(v);
+	this.pvsflags |= PVSF_IGNOREPVS;
+	this.SendFlags |= SENDFLAG_ORIGIN;
+}
+
+float sky_camera::SendEntity(entity to, float sendflags)
+{
+	// mask sendflags for 1 byte
+	sendflags &= 0xFF;
+
+	// write entity header
+	WriteByte(MSG_ENTITY, SHAREDENT_SKY_CAMERA);
+	WriteByte(MSG_ENTITY, sendflags);
+
+	// write origin
+	if (sendflags & SENDFLAG_ORIGIN)
+	{
+		WriteCoord(MSG_ENTITY, self.origin.x);
+		WriteCoord(MSG_ENTITY, self.origin.y);
+		WriteCoord(MSG_ENTITY, self.origin.z);
+	}
+
+	return TRUE;
 }

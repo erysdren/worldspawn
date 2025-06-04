@@ -26,6 +26,9 @@ static var spline_t *physgun_spline = NULL;
 static var entity viewmodel = NULL;
 #endif
 
+static var bool skyroom_set = false;
+static var vector skyroom_pos = [0, 0, 0];
+
 void CSQC_RendererRestarted(string rendererdescription)
 {
 
@@ -72,6 +75,14 @@ void CSQC_UpdateView(float vwidth, float vheight, float notmenu)
 	setproperty(VF_DRAWENGINESBAR, TRUE);
 	setproperty(VF_DRAWCROSSHAIR, TRUE);
 	setproperty(VF_DRAWWORLD, TRUE);
+
+	if (skyroom_set)
+	{
+		float scale = 16; // FIXME: user-settable from sky_camera entity
+		vector pos = getproperty(VF_ORIGIN);
+		vector offset = [pos.x / scale, pos.y / scale, pos.z / scale];
+		setproperty(VF_SKYROOM_CAMERA, skyroom_pos + offset);
+	}
 
 	addentities(MASK_ENGINE | MASK_VIEWMODEL);
 
@@ -199,4 +210,33 @@ void CSQC_Parse_Print(string printmsg, float printlvl)
 	{
 		print(printmsg);
 	}
+}
+
+void CSQC_Ent_Update(float isnew)
+{
+	float type = readbyte();
+	float sendflags = readbyte();
+	switch (type)
+	{
+		case SHAREDENT_SKY_CAMERA:
+		{
+			if (sendflags & SENDFLAG_ORIGIN)
+			{
+				self.origin.x = readcoord();
+				self.origin.y = readcoord();
+				self.origin.z = readcoord();
+				setorigin(self, self.origin);
+
+				skyroom_pos = self.origin;
+				skyroom_set = true;
+			}
+
+			break;
+		}
+	}
+}
+
+void CSQC_Ent_Remove()
+{
+	remove(self);
 }

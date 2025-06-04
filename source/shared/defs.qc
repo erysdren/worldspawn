@@ -55,3 +55,27 @@ float vlen2d(vector v)
 	v.z = 0;
 	return vlen(v);
 }
+
+#ifdef ADDON
+
+vector *ptr_trace_endpos;
+#define trace_endpos (*ptr_trace_endpos)
+
+vector *ptr_trace_plane_normal;
+#define trace_plane_normal (*ptr_trace_plane_normal)
+
+entity *ptr_trace_ent;
+#define trace_ent (*ptr_trace_ent)
+
+entity *ptr_self;
+#define self (*ptr_self)
+
+void addon_init()
+{
+	ptr_trace_endpos = (vector *)externvalue(0, "&trace_endpos");
+	ptr_trace_plane_normal = (vector *)externvalue(0, "&trace_plane_normal");
+	ptr_trace_ent = (entity *)externvalue(0, "&trace_ent");
+	ptr_self = (entity *)externvalue(0, "&self");
+}
+
+#endif

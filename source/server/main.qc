@@ -19,6 +19,15 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see https://www.gnu.org/licenses/
 */
 
+void init(float prevprogs)
+{
+#ifdef ADDON
+	addon_init();
+#endif
+}
+
+#ifndef ADDON
+
 void main()
 {
 
@@ -212,3 +221,5 @@ void SV_RunClientCommand()
 {
 	runstandardplayerphysics(self);
 }
+
+#endif // ADDON

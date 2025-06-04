@@ -193,6 +193,7 @@ target_progs(quakec worldspawn
 		shared/defs.qc
 		server/lqdefs.qc
 		server/defs.qc
+		server/main.qc
 		server/physicsentity.qc
 		server/entities/env_physexplosion.qc
 		server/entities/func_breakable.qc
@@ -208,6 +209,7 @@ target_progs(quakec worldspawn
 	FLAGS
 		-DNQSSQC
 		-DSERVER
+		-DADDON
 		-Tfte_6614
 		-Fassumeint
 		-Fsubscope

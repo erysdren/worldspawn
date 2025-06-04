@@ -129,7 +129,7 @@ void CPhysicsEntity::th_pain(entity attacker, float damage)
 {
 	// this is just boldly assuming that trace_endpos is set to where the damage landed, as is largely the case
 	this.EnablePhysics();
-	physics_addforce(this, (this.origin - attacker.origin) * damage, (vector)externvalue(0, "trace_endpos"));
+	physics_addforce(this, (this.origin - attacker.origin) * damage, trace_endpos);
 }
 
 void CPhysicsEntity::th_die()

@@ -97,7 +97,7 @@ function(target_progs target name)
 	# FTE's CMakeLists.txt is pretty messy and likes to regenerate for no reason.
 	add_custom_command(
 		OUTPUT ${PROJECT_SOURCE_DIR}/game/worldspawn/${name}.dat
-		DEPENDS fteqcc ${PROJECT_SOURCE_DIR}/source/${name}.src
+		DEPENDS fteqcc fteextensions ${PROJECT_SOURCE_DIR}/source/${name}.src
 		IMPLICIT_DEPENDS C ${PROJECT_SOURCE_DIR}/source/${name}.src
 		COMMAND ${CMAKE_CROSSCOMPILING_EMULATOR} "$<TARGET_FILE:fteqcc>" ${name}.src -v ${ARG_FLAGS} -o ${PROJECT_SOURCE_DIR}/game/worldspawn/${name}.dat
 		WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/source
@@ -133,6 +133,7 @@ add_custom_command(
 add_custom_target(fteextensions DEPENDS ${PROJECT_SOURCE_DIR}/source/shared/fteextensions.qc)
 
 add_custom_target(quakec)
+add_dependencies(quakec fteextensions)
 
 # progs.dat (disabled for now)
 if(0)

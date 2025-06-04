@@ -32,5 +32,5 @@ cmake --build build --target librequake
 cmake --build build --target maps models
 
 # game code
-cmake --build build --target fteextensions qwprogs csprogs
+cmake --build build --target quakec
 ```

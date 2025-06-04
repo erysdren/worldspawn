@@ -28,6 +28,7 @@ along with this program; if not, see https://www.gnu.org/licenses/
 
 typedef enum { false, true } bool;
 
+// multicast events
 enum {
 	EVENT_PHYSGUN_STATE = 1
 };

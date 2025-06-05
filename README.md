@@ -14,6 +14,8 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 - eukara for dealing with my stupid questions (and [Nuclide](https://github.com/VeraVisions/nuclide/))
 - craig snedeker for the [Classic64 Asset Library](https://craigsnedeker.itch.io/classic64-asset-library)
 - lavender.pet (and contributors) for [LibreQuake](https://github.com/lavenderdotpet/LibreQuake)
+- rowen d. for various models, textures and skyboxes
+- uraymi for the slappy hand sprite texture
 
 ## license
 

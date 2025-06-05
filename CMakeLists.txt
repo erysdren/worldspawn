@@ -165,6 +165,7 @@ target_progs(quakec progs
 		-Ffastarrays
 		-Flo
 )
+endif()
 
 # csprogs.dat
 target_progs(quakec csprogs
@@ -184,7 +185,6 @@ target_progs(quakec csprogs
 		-Ffastarrays
 		-Flo
 )
-endif()
 
 # worldspawn.dat
 target_progs(quakec worldspawn

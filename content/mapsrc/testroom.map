@@ -708,33 +708,6 @@
 ( -192 384 0 ) ( -191 384 0 ) ( -192 384 1 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -192 384 0 ) ( -192 384 1 ) ( -192 385 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 3
-{
-( -384 -96 -32 ) ( -384 -95 -32 ) ( -384 -96 -31 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -384 -96 -32 ) ( -384 -96 -31 ) ( -383 -96 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -384 -96 -32 ) ( -383 -96 -32 ) ( -384 -95 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( -256 32 0 ) ( -256 33 0 ) ( -255 32 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( -256 192 0 ) ( -255 192 0 ) ( -256 192 1 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -256 32 0 ) ( -256 32 1 ) ( -256 33 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-}
-// brush 4
-{
-( -256 -64 0 ) ( -256 0 -32 ) ( -256 0 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( 64 -64 0 ) ( -128 -64 -32 ) ( -128 -64 0 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( 64 0 -32 ) ( -128 -64 -32 ) ( 64 -64 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 64 0 0 ) ( -128 -64 0 ) ( -128 0 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 64 0 0 ) ( -128 0 -32 ) ( 64 0 -32 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( 128 0 0 ) ( 128 -64 -32 ) ( 128 -64 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-}
-// brush 5
-{
-( -96 0 16 ) ( -96 1 16 ) ( -96 0 17 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -96 0 16 ) ( -96 0 17 ) ( -95 0 16 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -96 0 -32 ) ( -95 0 -32 ) ( -96 1 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( -32 224 0 ) ( -32 225 0 ) ( -31 224 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( -32 224 48 ) ( -31 224 48 ) ( -32 224 49 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -32 224 48 ) ( -32 224 49 ) ( -32 225 48 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-}
 }
 // entity 8
 {
@@ -1333,28 +1306,6 @@
 "classname" "func_detail"
 // brush 0
 {
-( -96 -384 -256 ) ( -96 -383 -256 ) ( -96 -384 -255 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -32 -384 -256 ) ( -32 -384 -255 ) ( -31 -384 -256 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -32 -384 -32 ) ( -31 -384 -32 ) ( -32 -383 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 128 -288 0 ) ( 128 -287 0 ) ( 129 -288 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 128 -256 16 ) ( 129 -256 16 ) ( 128 -256 17 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( 128 -288 16 ) ( 128 -288 17 ) ( 128 -287 16 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-}
-// brush 1
-{
-( -16 -256 -32 ) ( -16 -255 -32 ) ( -16 -256 -31 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -16 -256 -32 ) ( -16 -256 -31 ) ( -15 -256 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( -16 -256 -32 ) ( -15 -256 -32 ) ( -16 -255 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 48 -64 0 ) ( 48 -63 0 ) ( 49 -64 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 48 -64 0 ) ( 49 -64 0 ) ( 48 -64 1 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
-( 48 -64 0 ) ( 48 -64 1 ) ( 48 -63 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
-}
-}
-// entity 74
-{
-"classname" "func_detail"
-// brush 0
-{
 ( 648 376 128 ) ( 640 384 128 ) ( 640 384 256 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 648 376 256 ) ( 664 376 256 ) ( 664 376 128 ) dev/grey001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 664 376 128 ) ( 672 384 128 ) ( 640 384 128 ) tools/nodraw [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
@@ -1381,7 +1332,7 @@
 ( 672 256 128 ) ( 672 256 256 ) ( 664 264 256 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 75
+// entity 74
 {
 "classname" "func_detail"
 // brush 0
@@ -1421,7 +1372,7 @@
 ( 672 32 160 ) ( 672 32 224 ) ( 664 40 224 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 76
+// entity 75
 {
 "classname" "func_detail"
 // brush 0
@@ -1461,7 +1412,7 @@
 ( 672 -192 160 ) ( 672 -192 224 ) ( 664 -184 224 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 77
+// entity 76
 {
 "classname" "func_detail"
 // brush 0
@@ -1492,7 +1443,7 @@
 ( 112 1232 0 ) ( 112 1232 -256 ) ( 128 1216 -256 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 78
+// entity 77
 {
 "classname" "func_physbox"
 "mass" "50"
@@ -1534,7 +1485,7 @@
 ( -336 -8 120 ) ( -336 -8 121 ) ( -336 -7 120 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 79
+// entity 78
 {
 "classname" "phys_constraint"
 "origin" "-304 0 128"
@@ -1544,434 +1495,434 @@
 "movedir" "1 1 1"
 "angles" "0 180 0"
 }
-// entity 80
+// entity 79
 {
 "classname" "prop_physics"
 "origin" "192 -112 40"
 "model" "models/rowen/metalsheet01.iqm"
 "angles" "0 0 -75"
 }
-// entity 81
+// entity 80
 {
 "classname" "phys_box"
 "origin" "-480 1248 160"
 }
-// entity 82
+// entity 81
 {
 "classname" "phys_box"
 "origin" "-608 1248 160"
 }
-// entity 83
+// entity 82
 {
 "classname" "phys_box"
 "origin" "-608 1312 160"
 }
-// entity 84
+// entity 83
 {
 "classname" "phys_box"
 "origin" "-480 1312 160"
 }
-// entity 85
+// entity 84
 {
 "classname" "phys_box"
 "origin" "-608 1376 160"
 }
-// entity 86
+// entity 85
 {
 "classname" "phys_box"
 "origin" "-480 1376 160"
 }
-// entity 87
+// entity 86
 {
 "classname" "phys_box"
 "origin" "-544 1376 160"
 }
-// entity 88
+// entity 87
 {
 "classname" "phys_box"
 "origin" "-544 1312 160"
 }
-// entity 89
+// entity 88
 {
 "classname" "phys_box"
 "origin" "-544 1248 160"
 }
-// entity 90
+// entity 89
 {
 "classname" "phys_sphere"
 "origin" "-480 1376 224"
 }
-// entity 91
+// entity 90
 {
 "classname" "phys_sphere"
 "origin" "-480 1248 224"
 }
-// entity 92
+// entity 91
 {
 "classname" "phys_sphere"
 "origin" "-544 1248 224"
 }
-// entity 93
+// entity 92
 {
 "classname" "phys_sphere"
 "origin" "-608 1248 224"
 }
-// entity 94
+// entity 93
 {
 "classname" "phys_sphere"
 "origin" "-608 1312 224"
 }
-// entity 95
+// entity 94
 {
 "classname" "phys_sphere"
 "origin" "-544 1312 224"
 }
-// entity 96
+// entity 95
 {
 "classname" "phys_sphere"
 "origin" "-608 1376 224"
 }
-// entity 97
+// entity 96
 {
 "classname" "phys_sphere"
 "origin" "-544 1376 224"
 }
-// entity 98
+// entity 97
 {
 "classname" "phys_sphere"
 "origin" "-480 1312 224"
 }
-// entity 99
+// entity 98
 {
 "classname" "phys_box"
 "origin" "-480 1376 96"
 }
-// entity 100
+// entity 99
 {
 "classname" "phys_box"
 "origin" "-480 1248 96"
 }
-// entity 101
+// entity 100
 {
 "classname" "phys_box"
 "origin" "-544 1248 96"
 }
-// entity 102
+// entity 101
 {
 "classname" "phys_box"
 "origin" "-608 1248 96"
 }
-// entity 103
+// entity 102
 {
 "classname" "phys_box"
 "origin" "-608 1312 96"
 }
-// entity 104
+// entity 103
 {
 "classname" "phys_box"
 "origin" "-544 1312 96"
 }
-// entity 105
+// entity 104
 {
 "classname" "phys_box"
 "origin" "-608 1376 96"
 }
-// entity 106
+// entity 105
 {
 "classname" "phys_box"
 "origin" "-544 1376 96"
 }
-// entity 107
+// entity 106
 {
 "classname" "phys_box"
 "origin" "-480 1312 96"
 }
-// entity 108
+// entity 107
 {
 "classname" "phys_box"
 "origin" "-480 1056 160"
 }
-// entity 109
+// entity 108
 {
 "classname" "phys_box"
 "origin" "-608 1056 160"
 }
-// entity 110
+// entity 109
 {
 "classname" "phys_box"
 "origin" "-608 1120 160"
 }
-// entity 111
+// entity 110
 {
 "classname" "phys_box"
 "origin" "-480 1120 160"
 }
-// entity 112
+// entity 111
 {
 "classname" "phys_box"
 "origin" "-608 1184 160"
 }
-// entity 113
+// entity 112
 {
 "classname" "phys_box"
 "origin" "-480 1184 160"
 }
-// entity 114
+// entity 113
 {
 "classname" "phys_box"
 "origin" "-544 1184 160"
 }
-// entity 115
+// entity 114
 {
 "classname" "phys_box"
 "origin" "-544 1120 160"
 }
-// entity 116
+// entity 115
 {
 "classname" "phys_box"
 "origin" "-544 1056 160"
 }
-// entity 117
+// entity 116
 {
 "classname" "phys_sphere"
 "origin" "-480 1184 224"
 }
-// entity 118
+// entity 117
 {
 "classname" "phys_sphere"
 "origin" "-480 1056 224"
 }
-// entity 119
+// entity 118
 {
 "classname" "phys_sphere"
 "origin" "-544 1056 224"
 }
-// entity 120
+// entity 119
 {
 "classname" "phys_sphere"
 "origin" "-608 1056 224"
 }
-// entity 121
+// entity 120
 {
 "classname" "phys_sphere"
 "origin" "-608 1120 224"
 }
-// entity 122
+// entity 121
 {
 "classname" "phys_sphere"
 "origin" "-544 1120 224"
 }
-// entity 123
+// entity 122
 {
 "classname" "phys_sphere"
 "origin" "-608 1184 224"
 }
-// entity 124
+// entity 123
 {
 "classname" "phys_sphere"
 "origin" "-544 1184 224"
 }
-// entity 125
+// entity 124
 {
 "classname" "phys_sphere"
 "origin" "-480 1120 224"
 }
-// entity 126
+// entity 125
 {
 "classname" "phys_box"
 "origin" "-480 1184 96"
 }
-// entity 127
+// entity 126
 {
 "classname" "phys_box"
 "origin" "-480 1056 96"
 }
-// entity 128
+// entity 127
 {
 "classname" "phys_box"
 "origin" "-544 1056 96"
 }
-// entity 129
+// entity 128
 {
 "classname" "phys_box"
 "origin" "-608 1056 96"
 }
-// entity 130
+// entity 129
 {
 "classname" "phys_box"
 "origin" "-608 1120 96"
 }
-// entity 131
+// entity 130
 {
 "classname" "phys_box"
 "origin" "-544 1120 96"
 }
-// entity 132
+// entity 131
 {
 "classname" "phys_box"
 "origin" "-608 1184 96"
 }
-// entity 133
+// entity 132
 {
 "classname" "phys_box"
 "origin" "-544 1184 96"
 }
-// entity 134
+// entity 133
 {
 "classname" "phys_box"
 "origin" "-480 1120 96"
 }
-// entity 135
+// entity 134
 {
 "classname" "phys_box"
 "origin" "-672 1248 160"
 }
-// entity 136
+// entity 135
 {
 "classname" "phys_box"
 "origin" "-672 1312 160"
 }
-// entity 137
+// entity 136
 {
 "classname" "phys_box"
 "origin" "-672 1376 160"
 }
-// entity 138
+// entity 137
 {
 "classname" "phys_sphere"
 "origin" "-672 1248 224"
 }
-// entity 139
+// entity 138
 {
 "classname" "phys_sphere"
 "origin" "-672 1312 224"
 }
-// entity 140
+// entity 139
 {
 "classname" "phys_sphere"
 "origin" "-672 1376 224"
 }
-// entity 141
+// entity 140
 {
 "classname" "phys_box"
 "origin" "-672 1248 96"
 }
-// entity 142
+// entity 141
 {
 "classname" "phys_box"
 "origin" "-672 1312 96"
 }
-// entity 143
+// entity 142
 {
 "classname" "phys_box"
 "origin" "-672 1376 96"
 }
-// entity 144
+// entity 143
 {
 "classname" "phys_box"
 "origin" "-672 1056 160"
 }
-// entity 145
+// entity 144
 {
 "classname" "phys_box"
 "origin" "-672 1120 160"
 }
-// entity 146
+// entity 145
 {
 "classname" "phys_box"
 "origin" "-672 1184 160"
 }
-// entity 147
+// entity 146
 {
 "classname" "phys_sphere"
 "origin" "-672 1056 224"
 }
-// entity 148
+// entity 147
 {
 "classname" "phys_sphere"
 "origin" "-672 1120 224"
 }
-// entity 149
+// entity 148
 {
 "classname" "phys_sphere"
 "origin" "-672 1184 224"
 }
-// entity 150
+// entity 149
 {
 "classname" "phys_box"
 "origin" "-672 1056 96"
 }
-// entity 151
+// entity 150
 {
 "classname" "phys_box"
 "origin" "-672 1120 96"
 }
-// entity 152
+// entity 151
 {
 "classname" "phys_box"
 "origin" "-672 1184 96"
 }
-// entity 153
+// entity 152
 {
 "classname" "phys_box"
 "origin" "-608 1440 160"
 }
-// entity 154
+// entity 153
 {
 "classname" "phys_box"
 "origin" "-480 1440 160"
 }
-// entity 155
+// entity 154
 {
 "classname" "phys_box"
 "origin" "-544 1440 160"
 }
-// entity 156
+// entity 155
 {
 "classname" "phys_sphere"
 "origin" "-480 1440 224"
 }
-// entity 157
+// entity 156
 {
 "classname" "phys_sphere"
 "origin" "-608 1440 224"
 }
-// entity 158
+// entity 157
 {
 "classname" "phys_sphere"
 "origin" "-544 1440 224"
 }
-// entity 159
+// entity 158
 {
 "classname" "phys_box"
 "origin" "-480 1440 96"
 }
-// entity 160
+// entity 159
 {
 "classname" "phys_box"
 "origin" "-608 1440 96"
 }
-// entity 161
+// entity 160
 {
 "classname" "phys_box"
 "origin" "-544 1440 96"
 }
-// entity 162
+// entity 161
 {
 "classname" "phys_box"
 "origin" "-672 1440 160"
 }
-// entity 163
+// entity 162
 {
 "classname" "phys_sphere"
 "origin" "-672 1440 224"
 }
-// entity 164
+// entity 163
 {
 "classname" "phys_box"
 "origin" "-672 1440 96"
 }
-// entity 165
+// entity 164
 {
 "classname" "func_physbox"
 "targetname" "dropramp"
@@ -1996,7 +1947,7 @@
 ( -952 -1032 576 ) ( -952 -1032 577 ) ( -952 -1031 576 ) tools/origin [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 166
+// entity 165
 {
 "classname" "func_detail"
 // brush 0
@@ -2255,7 +2206,7 @@
 ( -896 -912 80 ) ( -896 -880 80 ) ( -896 -880 48 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 167
+// entity 166
 {
 "classname" "func_detail"
 // brush 0
@@ -2268,7 +2219,7 @@
 ( -896 -1048 520 ) ( -896 -1048 521 ) ( -896 -1047 520 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 168
+// entity 167
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2277,7 +2228,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -848 0 0 1 -16 0 0 0 1"
 }
-// entity 169
+// entity 168
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2311,7 +2262,7 @@
 ( -912 -1092 620 ) ( -912 -1088 612 ) ( -912 -1088 604 ) dev/grey002a [ 0 1 0 -48 ] [ 0 0 -1 0 ] 270 1 1
 }
 }
-// entity 170
+// entity 169
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2320,7 +2271,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -896 0 0 1 -16 0 0 0 1"
 }
-// entity 171
+// entity 170
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2354,7 +2305,7 @@
 ( -912 -1140 620 ) ( -912 -1136 612 ) ( -912 -1136 604 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 172
+// entity 171
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2363,7 +2314,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -800 0 0 1 -16 0 0 0 1"
 }
-// entity 173
+// entity 172
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2397,7 +2348,7 @@
 ( -912 -1044 620 ) ( -912 -1040 612 ) ( -912 -1040 604 ) dev/grey002a [ 0 1 0 -96 ] [ 0 0 -1 0 ] 270 1 1
 }
 }
-// entity 174
+// entity 173
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2406,7 +2357,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -752 0 0 1 -16 0 0 0 1"
 }
-// entity 175
+// entity 174
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2440,7 +2391,7 @@
 ( -912 -996 620 ) ( -912 -992 612 ) ( -912 -992 604 ) dev/grey002a [ 0 1 0 -16 ] [ 0 0 -1 0 ] 270 1 1
 }
 }
-// entity 176
+// entity 175
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2449,7 +2400,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -704 0 0 1 -16 0 0 0 1"
 }
-// entity 177
+// entity 176
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2483,7 +2434,7 @@
 ( -912 -948 620 ) ( -912 -944 612 ) ( -912 -944 604 ) dev/grey002a [ 0 1 0 -64 ] [ 0 0 -1 0 ] 270 1 1
 }
 }
-// entity 178
+// entity 177
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2492,7 +2443,7 @@
 "_tb_linked_group_id" "{ff4ef5d9-b541-4ef7-9ccf-8068de253a12}"
 "_tb_transformation" "1 0 0 0 0 1 0 -656 0 0 1 -16 0 0 0 1"
 }
-// entity 179
+// entity 178
 {
 "classname" "func_physbox"
 "mass" "5"
@@ -2526,7 +2477,7 @@
 ( -912 -900 620 ) ( -912 -896 612 ) ( -912 -896 604 ) dev/grey002a [ 0 1 0 -112 ] [ 0 0 -1 0 ] 270 1 1
 }
 }
-// entity 180
+// entity 179
 {
 "classname" "func_group"
 "_tb_type" "_tb_group"
@@ -2535,7 +2486,7 @@
 "_tb_linked_group_id" "{e6a017bd-f446-40e1-be16-27b959c22898}"
 "_tb_transformation" "6.123233995736766e-17 -1 0 -880 1 6.123233995736766e-17 0 -592 0 0 1 0 0 0 0 1"
 }
-// entity 181
+// entity 180
 {
 "classname" "prop_physics"
 "origin" "-656 -1204 18"
@@ -2544,7 +2495,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 182
+// entity 181
 {
 "classname" "prop_physics"
 "origin" "-656 -1204 30"
@@ -2553,7 +2504,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 183
+// entity 182
 {
 "classname" "prop_physics"
 "origin" "-656 -1232 30"
@@ -2562,7 +2513,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 184
+// entity 183
 {
 "classname" "prop_physics"
 "origin" "-656 -1246 30"
@@ -2571,7 +2522,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 185
+// entity 184
 {
 "classname" "prop_physics"
 "origin" "-656 -1218 30"
@@ -2580,7 +2531,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 186
+// entity 185
 {
 "classname" "prop_physics"
 "origin" "-656 -1190 30"
@@ -2589,7 +2540,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 187
+// entity 186
 {
 "classname" "prop_physics"
 "origin" "-656 -1204 42"
@@ -2598,7 +2549,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 188
+// entity 187
 {
 "classname" "prop_physics"
 "origin" "-656 -1232 42"
@@ -2607,7 +2558,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 189
+// entity 188
 {
 "classname" "prop_physics"
 "origin" "-656 -1246 42"
@@ -2616,7 +2567,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 190
+// entity 189
 {
 "classname" "prop_physics"
 "origin" "-656 -1218 42"
@@ -2625,7 +2576,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 191
+// entity 190
 {
 "classname" "prop_physics"
 "origin" "-656 -1190 42"
@@ -2634,7 +2585,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 192
+// entity 191
 {
 "classname" "prop_physics"
 "origin" "-656 -1232 18"
@@ -2643,7 +2594,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 193
+// entity 192
 {
 "classname" "prop_physics"
 "origin" "-656 -1246 18"
@@ -2652,7 +2603,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 194
+// entity 193
 {
 "classname" "prop_physics"
 "origin" "-656 -1218 18"
@@ -2661,7 +2612,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 195
+// entity 194
 {
 "classname" "prop_physics"
 "origin" "-656 -1190 18"
@@ -2670,7 +2621,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 196
+// entity 195
 {
 "classname" "prop_physics"
 "origin" "-656 -1204 54"
@@ -2679,7 +2630,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 197
+// entity 196
 {
 "classname" "prop_physics"
 "origin" "-656 -1232 54"
@@ -2688,7 +2639,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 198
+// entity 197
 {
 "classname" "prop_physics"
 "origin" "-656 -1246 54"
@@ -2697,7 +2648,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 199
+// entity 198
 {
 "classname" "prop_physics"
 "origin" "-656 -1218 54"
@@ -2706,7 +2657,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 200
+// entity 199
 {
 "classname" "prop_physics"
 "origin" "-656 -1190 54"
@@ -2715,7 +2666,7 @@
 "angles" "0 90 0"
 "_tb_group" "7"
 }
-// entity 201
+// entity 200
 {
 "classname" "func_group"
 "_tb_group" "7"
@@ -2783,7 +2734,7 @@
 ( -728 -1258 10 ) ( -728 -1258 11 ) ( -728 -1257 10 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 202
+// entity 201
 {
 "classname" "phys_constraint"
 "origin" "-960 -1184 584"
@@ -2793,7 +2744,7 @@
 "friction" "1"
 "movedir" "1 1 1"
 }
-// entity 203
+// entity 202
 {
 "classname" "prop_physics"
 "origin" "-320 -1168 32"
@@ -2801,7 +2752,7 @@
 "angles" "0 -165 0"
 "skin" "3"
 }
-// entity 204
+// entity 203
 {
 "classname" "prop_physics"
 "origin" "-320 -1216 32"
@@ -2809,14 +2760,14 @@
 "angles" "0 -15 0"
 "skin" "2"
 }
-// entity 205
+// entity 204
 {
 "classname" "prop_physics"
 "origin" "-368 -1184 32"
 "model" "models/classic64/box_01.iqm"
 "angles" "0 180 0"
 }
-// entity 206
+// entity 205
 {
 "classname" "prop_physics"
 "origin" "-408 -1216 32"
@@ -2824,7 +2775,7 @@
 "angles" "0 30 0"
 "skin" "1"
 }
-// entity 207
+// entity 206
 {
 "classname" "func_detail"
 // brush 0
@@ -2946,7 +2897,7 @@
 ( 960 -1216 272 ) ( 960 -1344 256 ) ( 960 -1344 272 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 208
+// entity 207
 {
 "classname" "func_detail"
 // brush 0
@@ -2969,7 +2920,7 @@
 ( 512 -736 8 ) ( 512 -800 0 ) ( 512 -800 8 ) dev/ref_10 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 209
+// entity 208
 {
 "classname" "func_physbox"
 "targetname" "seesawramp"
@@ -2993,7 +2944,7 @@
 ( 640 -768 72 ) ( 640 -768 73 ) ( 640 -767 72 ) dev/grey001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 210
+// entity 209
 {
 "classname" "phys_constraint"
 "origin" "448 -832 66"
@@ -3003,7 +2954,7 @@
 "friction" "1"
 "movedir" "1 1 1"
 }
-// entity 211
+// entity 210
 {
 "classname" "prop_physics"
 "origin" "568 -796 120"
@@ -3012,7 +2963,7 @@
 "skin" "3"
 "mass" "10"
 }
-// entity 212
+// entity 211
 {
 "classname" "func_detail"
 // brush 0
@@ -3100,7 +3051,7 @@
 ( 0 -640 0 ) ( 0 -512 0 ) ( 0 -512 -128 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 213
+// entity 212
 {
 "classname" "func_detail"
 // brush 0
@@ -3234,7 +3185,7 @@
 ( -384 384 272 ) ( -384 -384 256 ) ( -384 -384 272 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 214
+// entity 213
 {
 "classname" "env_physexplosion"
 "origin" "-576 1248 32"
@@ -3242,7 +3193,7 @@
 "force" "32"
 "targetname" "boom"
 }
-// entity 215
+// entity 214
 {
 "classname" "func_detail"
 // brush 0
@@ -3255,7 +3206,7 @@
 ( -256 1664 32 ) ( -256 1664 33 ) ( -256 1665 32 ) dev/grey002a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 216
+// entity 215
 {
 "classname" "trigger_once"
 "target" "boom"
@@ -3269,7 +3220,7 @@
 ( -256 1664 32 ) ( -256 1664 33 ) ( -256 1665 32 ) tools/trigger [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 217
+// entity 216
 {
 "classname" "func_brush"
 // brush 0
@@ -3280,5 +3231,54 @@
 ( -832 -848 384 ) ( -832 -847 384 ) ( -831 -848 384 ) tools/nodraw [ 1 0 0 16 ] [ 0 -1 0 32 ] 270 1 1
 ( -832 -560 512 ) ( -831 -560 512 ) ( -832 -560 513 ) tools/nodraw [ -1 0 0 -16 ] [ 0 0 -1 0 ] 0 1 1
 ( -832 -848 512 ) ( -832 -848 513 ) ( -832 -847 512 ) animated/shambler_plinko [ 0 1 0 0 ] [ 0 0 -1 69 ] 0 1 1
+}
+}
+// entity 217
+{
+"classname" "func_detail"
+// brush 0
+{
+( -96 -384 -256 ) ( -96 -383 -256 ) ( -96 -384 -255 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -384 -256 ) ( -32 -384 -255 ) ( -31 -384 -256 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 -384 -32 ) ( -31 -384 -32 ) ( -32 -383 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 128 -288 0 ) ( 128 -287 0 ) ( 129 -288 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 128 -256 16 ) ( 129 -256 16 ) ( 128 -256 17 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 -288 16 ) ( 128 -288 17 ) ( 128 -287 16 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 1
+{
+( -16 -256 -32 ) ( -16 -255 -32 ) ( -16 -256 -31 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -16 -256 -32 ) ( -16 -256 -31 ) ( -15 -256 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -16 -256 -32 ) ( -15 -256 -32 ) ( -16 -255 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 48 -64 0 ) ( 48 -63 0 ) ( 49 -64 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 48 -64 0 ) ( 49 -64 0 ) ( 48 -64 1 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 48 -64 0 ) ( 48 -64 1 ) ( 48 -63 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 2
+{
+( -256 -64 0 ) ( -256 0 -32 ) ( -256 0 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 -64 0 ) ( -128 -64 -32 ) ( -128 -64 0 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 64 0 -32 ) ( -128 -64 -32 ) ( 64 -64 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 64 0 0 ) ( -128 -64 0 ) ( -128 0 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 64 0 0 ) ( -128 0 -32 ) ( 64 0 -32 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 0 0 ) ( 128 -64 -32 ) ( 128 -64 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 3
+{
+( -96 0 16 ) ( -96 1 16 ) ( -96 0 17 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -96 0 16 ) ( -96 0 17 ) ( -95 0 16 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -96 0 -32 ) ( -95 0 -32 ) ( -96 1 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 224 0 ) ( -32 225 0 ) ( -31 224 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -32 224 48 ) ( -31 224 48 ) ( -32 224 49 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 224 48 ) ( -32 224 49 ) ( -32 225 48 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 4
+{
+( -384 -96 -32 ) ( -384 -95 -32 ) ( -384 -96 -31 ) tools/nodraw [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -384 -96 -32 ) ( -384 -96 -31 ) ( -383 -96 -32 ) tools/nodraw [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -384 -96 -32 ) ( -383 -96 -32 ) ( -384 -95 -32 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 32 0 ) ( -256 33 0 ) ( -255 32 0 ) dev/grey002a [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -256 192 0 ) ( -255 192 0 ) ( -256 192 1 ) dev/red001a [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -256 32 0 ) ( -256 32 1 ) ( -256 33 0 ) dev/red001a [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }

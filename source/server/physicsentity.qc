@@ -30,6 +30,7 @@ class CPhysicsEntity {
 	virtual void() EnablePhysics;
 	virtual void() DisablePhysics;
 	virtual void() TogglePhysics;
+	virtual void() LoadModelInfo;
 	virtual void() use;
 	virtual void() touch;
 	virtual void() customphysics;
@@ -41,6 +42,9 @@ class CPhysicsEntity {
 
 void CPhysicsEntity::CPhysicsEntity()
 {
+	// load values from script
+	this.LoadModelInfo();
+
 	// sensible defaults
 	if (this.mass <= 0) this.mass = 10;
 	if (this.gravity <= 0) this.gravity = 1;
@@ -85,6 +89,40 @@ void CPhysicsEntity::TogglePhysics()
 {
 	physics_enable(this, !this.mPhysicsState);
 	this.mPhysicsState = !this.mPhysicsState;
+}
+
+void CPhysicsEntity::LoadModelInfo()
+{
+	// dont load physics info for submodels
+	if (this.model[0] == '*')
+		return;
+
+	// open file
+	filestream f = fopen(sprintf("%s.json", this.model), FILE_READNL);
+	if (f < 0)
+		return;
+
+	// parse as json
+	jsonnode root = json_parse(fgets(f));
+	fclose(f);
+	if (!root)
+		return;
+
+	// read values
+	if (root["mass"]) this.mass = root["mass"].f;
+	if (root["gravity"]) this.gravity = root["gravity"].f;
+	if (root["friction"]) this.friction = root["friction"].f;
+	if (root["damp_angular"]) this.damp_angular = root["damp_angular"].f;
+	if (root["damp_linear"]) this.damp_linear = root["damp_linear"].f;
+	if (root["max_angular"]) this.max_angular = root["max_angular"].f;
+	if (root["scale"]) this.scale = root["scale"].f;
+	if (root["bouyency"]) this.bouyency = root["bouyency"].f;
+	if (root["health"]) this.health = root["health"].f;
+	if (root["mins"]) this.mins = stov(root["mins"].s);
+	if (root["maxs"]) this.maxs = stov(root["maxs"].s);
+
+	// clean up
+	json_free(root);
 }
 
 void CPhysicsEntity::use()
@@ -134,6 +172,17 @@ void CPhysicsEntity::th_pain(entity attacker, float damage)
 
 void CPhysicsEntity::th_die()
 {
+	// destroy all constraints that use us
+	int num_found = 0;
+	entity *found = find_list(::enemy, this, EV_ENTITY, num_found);
+	for (int i = 0; i < num_found; i++)
+		if (found[i].jointtype != 0)
+			remove(found[i]);
+	entity *found = find_list(::aiment, this, EV_ENTITY, num_found);
+	for (int i = 0; i < num_found; i++)
+		if (found[i].jointtype != 0)
+			remove(found[i]);
+
 	this.DisablePhysics();
 	remove(this);
 }

@@ -1,0 +1,7 @@
+{
+	"mass": 10,
+	"health": 10,
+	"gibs": [
+		{"model": "models/rowen/metalsheet02.iqm", "origin": "0 0 0", "angles": "0 0 0"}
+	]
+}

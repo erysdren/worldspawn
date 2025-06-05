@@ -58,6 +58,8 @@ float vlen2d(vector v)
 
 #ifdef ADDON
 
+#pragma optimise addon
+
 vector *ptr_trace_endpos;
 #define trace_endpos (*ptr_trace_endpos)
 
@@ -67,6 +69,15 @@ vector *ptr_trace_plane_normal;
 entity *ptr_trace_ent;
 #define trace_ent (*ptr_trace_ent)
 
+vector *ptr_v_forward;
+#define v_forward (*ptr_v_forward)
+
+vector *ptr_v_right;
+#define v_right (*ptr_v_right)
+
+vector *ptr_v_up;
+#define v_up (*ptr_v_up)
+
 entity *ptr_self;
 #define self (*ptr_self)
 
@@ -75,6 +86,9 @@ void addon_init()
 	ptr_trace_endpos = (vector *)externvalue(0, "&trace_endpos");
 	ptr_trace_plane_normal = (vector *)externvalue(0, "&trace_plane_normal");
 	ptr_trace_ent = (entity *)externvalue(0, "&trace_ent");
+	ptr_v_forward = (entity *)externvalue(0, "&v_forward");
+	ptr_v_right = (entity *)externvalue(0, "&v_right");
+	ptr_v_up = (entity *)externvalue(0, "&v_up");
 	ptr_self = (entity *)externvalue(0, "&self");
 }
 

@@ -16,6 +16,7 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 - lavender.pet (and contributors) for [LibreQuake](https://github.com/lavenderdotpet/LibreQuake)
 - rowen d. for various models, textures and skyboxes
 - uraymi for the slappy hand sprite texture
+- evie_src for the physgun view sprite
 
 ## license
 

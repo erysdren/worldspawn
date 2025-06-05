@@ -10,13 +10,13 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 
 ## credits
 
-- Spoike for creating the amazing [FTEQW](https://www.fteqw.org/) engine
-- eukara for dealing with my stupid questions (and [Nuclide](https://github.com/VeraVisions/nuclide/))
-- craig snedeker for the [Classic64 Asset Library](https://craigsnedeker.itch.io/classic64-asset-library)
-- lavender.pet (and contributors) for [LibreQuake](https://github.com/lavenderdotpet/LibreQuake)
+- [Spoike](https://triptohell.info/) for creating the amazing [FTEQW](https://www.fteqw.org/) engine
+- [eukara](https://frag-net.com/) for dealing with my stupid questions (and [Nuclide](https://github.com/VeraVisions/nuclide/))
+- [craig snedeker](https://craigsnedeker.tumblr.com/) for the [Classic64 Asset Library](https://craigsnedeker.itch.io/classic64-asset-library)
+- [lavender.pet](https://github.com/lavenderdotpet/) (and contributors) for [LibreQuake](https://github.com/lavenderdotpet/LibreQuake)
 - rowen d. for various models, textures and skyboxes
-- uraymi for the slappy hand sprite texture
-- evie_src for the physgun view sprite
+- [urayami](https://urayami.online/) for the slappy hand sprite texture
+- [evie_src](https://eviesrc.neocities.org/) for the physgun view sprite
 
 ## license
 

@@ -28,16 +28,16 @@ Source: [SUI Template for FTEQW](https://github.com/shpuld/sui-qc/)
 
 - [/source/menu/sui_sys.qc](./source/menu/sui_sys.qc)
 
-# evie_src
+## evie_src
 
 - [/game/worldspawn/gfx/phys.png](./game/worldspawn/gfx/phys.png)
 
-# urayami
+## urayami
 
 - [/game/worldspawn/gfx/slappyhand.png](./game/worldspawn/gfx/slappyhand.png)
 - [/game/worldspawn/gfx/slappyhandarm.png](./game/worldspawn/gfx/slappyhandarm.png)
 
-# craig snedeker
+## craig snedeker
 
 License: CC0 License
 

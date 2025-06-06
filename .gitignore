@@ -28,6 +28,7 @@ game/*.so
 game/*.log
 game/*.lst
 game/*.txt
+game/*.pem
 
 # user created files
 game/worldspawn/data/

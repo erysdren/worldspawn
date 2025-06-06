@@ -56,6 +56,11 @@ float vlen2d(vector v)
 	return vlen(v);
 }
 
+void saveconfig()
+{
+	localcmd("saveconfig\n");
+}
+
 #ifdef ADDON
 
 #pragma optimise addon

@@ -25,6 +25,9 @@ cmake --build build --target iqmtool fteqcc
 # engine and required plugins
 cmake --build build --target fteqw plug_jolt plug_hl2
 
+# dedicated server
+cmake --build build --target fteqw-sv
+
 # copy librequake assets
 cmake --build build --target librequake
 

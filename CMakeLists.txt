@@ -40,15 +40,16 @@ FetchContent_MakeAvailable(fteqw ericw-tools librequake)
 
 # override name and suffix
 set_target_properties(fteqw PROPERTIES OUTPUT_NAME worldspawn)
+set_target_properties(fteqw-sv PROPERTIES OUTPUT_NAME wsds)
 if(NOT DEFINED CMAKE_SYSTEM_PROCESSOR)
 	set(SYSTEM_PROCESSOR "unknown")
 else()
 	string(TOLOWER ${CMAKE_SYSTEM_PROCESSOR} SYSTEM_PROCESSOR)
 endif()
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
-	set_target_properties(fteqw iqmtool fteqcc qbsp vis light PROPERTIES SUFFIX "_${SYSTEM_PROCESSOR}.exe")
+	set_target_properties(fteqw fteqw-sv iqmtool fteqcc qbsp vis light PROPERTIES SUFFIX "_${SYSTEM_PROCESSOR}.exe")
 else()
-	set_target_properties(fteqw iqmtool fteqcc qbsp vis light PROPERTIES SUFFIX ".${SYSTEM_PROCESSOR}")
+	set_target_properties(fteqw fteqw-sv iqmtool fteqcc qbsp vis light PROPERTIES SUFFIX ".${SYSTEM_PROCESSOR}")
 endif()
 
 # override where they end up
@@ -57,7 +58,7 @@ set_target_properties(iqmtool fteqcc qbsp vis light
 		LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/game/bin
 		RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/game/bin
 )
-set_target_properties(fteqw plug_jolt plug_hl2
+set_target_properties(fteqw fteqw-sv plug_jolt plug_hl2
 	PROPERTIES
 		LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/game
 		RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/game
@@ -65,7 +66,7 @@ set_target_properties(fteqw plug_jolt plug_hl2
 
 # dummy targets
 add_custom_target(engine)
-add_dependencies(engine fteqw plug_jolt plug_hl2)
+add_dependencies(engine fteqw fteqw-sv plug_jolt plug_hl2)
 
 add_custom_target(tools)
 add_dependencies(tools iqmtool fteqcc qbsp vis light)

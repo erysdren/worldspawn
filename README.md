@@ -6,6 +6,7 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 
 ## docs
 
+- [AUTHORS.MD](./AUTHORS.md) - list of authors and contributors
 - [BUILDING.md](./BUILDING.md) - building the source code and game assets
 
 ## credits

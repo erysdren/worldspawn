@@ -19,10 +19,75 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see https://www.gnu.org/licenses/
 */
 
+#ifdef ADDON
+static void HeldPropCustomPhysics()
+{
+	makevectors(self.owner.v_angle);
+	vector idealpos = self.owner.origin + self.owner.view_ofs + (v_forward * self.mHeldDistance);
+	vector diff = idealpos - self.origin;
+
+	vector vel = normalize(diff) * 256;
+
+	tracebox(self.origin, self.mins, self.maxs, self.origin + vel * frametime, MOVE_NOMONSTERS, self);
+
+	if (vlen(diff) < self.mHeldDistance && trace_fraction == 1.0f)
+	{
+		setorigin(self, idealpos);
+		self.velocity = self.owner.velocity;
+	}
+	else
+	{
+		self.velocity = vel;
+	}
+}
+
+var void() original_PlayerPreThink = NULL;
+void PlayerPreThink()
+{
+	// +use
+	if (self.button5)
+	{
+		if (!self.mHeldProp)
+		{
+			makevectors(self.v_angle);
+			vector src = self.origin + self.view_ofs;
+			vector dst = src + v_forward * 512;
+
+			traceline(src, dst, MOVE_NORMAL, self);
+
+			if (trace_ent && trace_ent.movetype == MOVETYPE_PHYSICS)
+			{
+				self.mHeldProp = trace_ent;
+				self.mHeldProp.owner = self;
+				self.mHeldProp.customphysics = HeldPropCustomPhysics;
+				self.mHeldProp.mHeldDistance = 128;
+			}
+		}
+	}
+	else if (self.mHeldProp)
+	{
+		self.mHeldProp.owner = NULL;
+		self.mHeldProp.customphysics = NULL;
+		self.mHeldProp.mHeldDistance = 0;
+		self.mHeldProp = NULL;
+	}
+
+	// cant fire weapons while holding something
+	if (self.mHeldProp)
+		return;
+
+	if (original_PlayerPreThink)
+		original_PlayerPreThink();
+}
+#endif
+
 void init(float prevprogs)
 {
 #ifdef ADDON
 	addon_init();
+
+	original_PlayerPreThink = (void())externvalue(0, "PlayerPreThink");
+	externset(0, PlayerPreThink, "PlayerPreThink");
 #endif
 }
 

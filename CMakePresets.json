@@ -16,7 +16,7 @@
 			"name": "release",
 			"displayName": "Release",
 			"generator": "Unix Makefiles",
-			"binaryDir": "build",
+			"binaryDir": "build-release",
 			"cacheVariables": {
 				"CMAKE_BUILD_TYPE": "Release"
 			}
@@ -25,7 +25,7 @@
 			"name": "debug",
 			"displayName": "Debug",
 			"generator": "Unix Makefiles",
-			"binaryDir": "build",
+			"binaryDir": "build-debug",
 			"cacheVariables": {
 				"CMAKE_BUILD_TYPE": "Debug"
 			}
@@ -65,17 +65,17 @@
 		{
 			"name": "engine",
 			"configurePreset": "default",
-			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+			"targets": ["fteqw", "fteqw-sv", "plug_jolt", "plug_hl2"]
 		},
 		{
 			"name": "engine-release",
 			"configurePreset": "release",
-			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+			"targets": ["fteqw", "fteqw-sv", "plug_jolt", "plug_hl2"]
 		},
 		{
 			"name": "engine-debug",
 			"configurePreset": "debug",
-			"targets": ["fteqw", "plug_jolt", "plug_hl2"]
+			"targets": ["fteqw", "fteqw-sv", "plug_jolt", "plug_hl2"]
 		}
 	]
 }

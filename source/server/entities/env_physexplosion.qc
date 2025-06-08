@@ -19,6 +19,11 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, see https://www.gnu.org/licenses/
 */
 
+/**
+ * @brief an invisible explosion that only affects physics bodies
+ * @field radius 256 search radius for physics bodies
+ * @field force 32 force applied to each body (diminishes with distance)
+ */
 class env_physexplosion {
 	void() env_physexplosion;
 	virtual void() use;

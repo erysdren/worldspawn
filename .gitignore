@@ -64,6 +64,7 @@ content/mapsrc/**/*.log
 content/mapsrc/**/*.prt
 content/mapsrc/**/*.json
 content/mapsrc/**/*.bak
+content/mapsrc/**/*.autosave.map
 
 # created by modeling tools
 content/modelsrc/**/*.blend1

@@ -15,3 +15,12 @@ models/rowen/metalsheet01
 		rgbgen lightingdiffuse
 	}
 }
+
+models/rowen/milkcrate01
+{
+	{
+		map textures/models/rowen/milkcrate01.png
+		alphafunc ge128
+		rgbgen lightingdiffuse
+	}
+}

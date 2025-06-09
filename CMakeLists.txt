@@ -200,6 +200,7 @@ target_progs(quakec worldspawn
 		server/entities/func_breakable.qc
 		server/entities/func_brush.qc
 		server/entities/func_physbox.qc
+		server/entities/npc_pal.qc
 		server/entities/phys_box.qc
 		server/entities/phys_constraint.qc
 		server/entities/phys_sphere.qc

@@ -25,7 +25,7 @@
 
 ## shp (he/him) @shpuld
 
-License: MIT License
+License: MIT
 
 Source: [SUI Template for FTEQW](https://github.com/shpuld/sui-qc/)
 
@@ -44,7 +44,7 @@ Source: [SUI Template for FTEQW](https://github.com/shpuld/sui-qc/)
 
 ## craig snedeker
 
-License: CC0 License
+License: CC0
 
 Source: [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library)
 
@@ -63,3 +63,11 @@ Source: [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic6
 - [/game/worldspawn/textures/models/classic64/box_04.png](./game/worldspawn/textures/models/classic64/box_04.png)
 - [/game/worldspawn/textures/models/classic64/pvc_pipe.png](./game/worldspawn/textures/models/classic64/pvc_pipe.png)
 - [/game/worldspawn/textures/models/classic64/pvc_pipe_pallet.png](./game/worldspawn/textures/models/classic64/pvc_pipe_pallet.png)
+
+## LibreQuake Project
+
+License: BSD-3 (assets) GPL2 (code)
+
+Source: [LibreQuake](https://github.com/lavenderdotpet/LibreQuake)
+
+- [/source/server/lqdefs.qc](./source/server/lqdefs.qc)

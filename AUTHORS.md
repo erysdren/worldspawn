@@ -2,7 +2,8 @@
 
 | path | author | license | source |
 |---|---|---|---|
-| [/content/mediasrc/Worldspawn Finals.zip](./content/mediasrc/Worldspawn%20Finals.zip) | Xan "Lithish" Farley | | |
+| [/.github/ws logo 256 long.png](./.github/ws%20logo%20256%20long.png) | [Xan "Lithish" Farley](https://lithish.com/) | | |
+| [/content/mediasrc/Worldspawn Finals.zip](./content/mediasrc/Worldspawn%20Finals.zip) | [Xan "Lithish" Farley](https://lithish.com/) | | |
 | [/content/modelsrc/classic64/box_01.blend](./content/modelsrc/classic64/box_01.blend) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |
 | [/content/modelsrc/classic64/box_01.iqe](./content/modelsrc/classic64/box_01.iqe) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |
 | [/content/modelsrc/classic64/pvc_pipe.blend](./content/modelsrc/classic64/pvc_pipe.blend) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |

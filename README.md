@@ -18,7 +18,7 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 - rowen d. for various models, textures and skyboxes
 - [urayami](https://urayami.online/) for the slappy hand sprite texture
 - [evie_src](https://eviesrc.neocities.org/) for the physgun view sprite
-- Xan "Lithish" Farley for the project logo
+- [Xan "Lithish" Farley](https://lithish.com/) for the project logo
 
 ## license
 

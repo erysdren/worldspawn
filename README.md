@@ -1,4 +1,4 @@
-# worldspawn
+![worldspawn](./.github/ws%20logo%20256%20long.png)
 
 worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 [LibreQuake](https://github.com/lavenderdotpet/LibreQuake), and
@@ -18,6 +18,7 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 - rowen d. for various models, textures and skyboxes
 - [urayami](https://urayami.online/) for the slappy hand sprite texture
 - [evie_src](https://eviesrc.neocities.org/) for the physgun view sprite
+- Xan "Lithish" Farley for the project logo
 
 ## license
 

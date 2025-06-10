@@ -2,6 +2,7 @@
 
 | path | author | license | source |
 |---|---|---|---|
+| [/content/mediasrc/Worldspawn Finals.zip](./content/mediasrc/Worldspawn%20Finals.zip) | Xan "Lithish" Farley | | |
 | [/content/modelsrc/classic64/box_01.blend](./content/modelsrc/classic64/box_01.blend) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |
 | [/content/modelsrc/classic64/box_01.iqe](./content/modelsrc/classic64/box_01.iqe) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |
 | [/content/modelsrc/classic64/pvc_pipe.blend](./content/modelsrc/classic64/pvc_pipe.blend) | craig snedeker | CC0 | [Classic64 Lowpoly Asset Library](https://craigsnedeker.itch.io/classic64-asset-library) |

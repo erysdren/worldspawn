@@ -1,5 +1,8 @@
 # Authors
 
+Please see [README.md](./README.md#license) for the whole repository's license
+terms.
+
 | path | author | license | source |
 |---|---|---|---|
 | [/.github/ws logo 256 long.png](./.github/ws%20logo%20256%20long.png) | [Xan "Lithish" Farley](https://lithish.com/) | | |

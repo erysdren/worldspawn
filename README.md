@@ -42,8 +42,8 @@ Several other files in this repository were created by other authors, some of
 which may fall under other licenses. Please see [AUTHORS.md](./AUTHORS.md) for
 details.
 
-This rest of this repository is © erysdren (it/its) under the
-[GPL2](./contrib/GPL2) license.
+This rest of this repository is licensed under the [GPL2](./contrib/GPL2)
+license.
 
 ---
 

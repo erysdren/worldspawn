@@ -175,6 +175,7 @@ target_progs(quakec csprogs
 		shared/defs.qc
 		shared/spline.qc
 		client/defs.qc
+		client/line.qc
 		client/chat.qc
 		client/main.qc
 	FLAGS

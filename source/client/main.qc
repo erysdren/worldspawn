@@ -151,6 +151,10 @@ void CSQC_UpdateView(float vwidth, float vheight, float notmenu)
 	}
 #endif
 
+	drawline3d(8, [0, 0, 0], [0, 0, 64], [1, 0, 0], 1, DRAWFLAG_NORMAL);
+	drawline3d(8, [0, 0, 64], [64, 0, 64], [1, 0, 0], 1, DRAWFLAG_NORMAL);
+	drawline3d(8, [64, 0, 64], [64, 64, 64], [1, 0, 0], 1, DRAWFLAG_NORMAL);
+
 	renderscene();
 
 #if 0

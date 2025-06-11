@@ -47,5 +47,7 @@ terms.
 | [/game/worldspawn/textures/models/rowen/milkcrate01.png](./game/worldspawn/textures/models/rowen/milkcrate01.png) | rowen d. | | |
 | [/game/worldspawn/textures/models/sphere.png](./game/worldspawn/textures/models/sphere.png) | [evie_src](https://eviesrc.neocities.org/) | | |
 | [/game/worldspawn/textures/rowen/grass01.png](./game/worldspawn/textures/rowen/grass01.png) | rowen d. | | |
+| [/game/worldspawn/textures/sprites/pal01.png](./game/worldspawn/textures/sprites/pal01.png) | [evie_src](https://eviesrc.neocities.org/) | | |
+| [/game/worldspawn/textures/sprites/pal02.png](./game/worldspawn/textures/sprites/pal02.png) | [evie_src](https://eviesrc.neocities.org/) | | |
 | [/source/menu/sui_sys.qc](./source/menu/sui_sys.qc) | [shp (he/him) @shpuld](https://bsky.app/profile/shpuld.bsky.social) | [MIT](./contrib/MIT) | [SUI Template for FTEQW](https://github.com/shpuld/sui-qc/) |
 | [/source/server/lqdefs.qc](./source/server/lqdefs.qc) | [LibreQuake Project](https://librequake.queer.sh/) | [GPL2](./contrib/GPL2) | [LibreQuake](https://github.com/lavenderdotpet/LibreQuake/blob/main/qcsrc/defs.qc) |

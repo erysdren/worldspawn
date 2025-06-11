@@ -6,8 +6,7 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 
 ## docs
 
-- [AUTHORS.MD](./docs/AUTHORS.md) - list of authors and contributors
-- [BUILDING.md](./docs/BUILDING.md) - building the source code and game assets
+- [BUILDING.md](./BUILDING.md) - building the source code and game assets
 
 ## credits
 
@@ -21,6 +20,32 @@ worldspawn is a sandbox game powered by [FTEQW](https://www.fteqw.org/),
 - [Xan "Lithish" Farley](https://lithish.com/) for the project logo
 
 ## license
+
+This project uses the [FTEQW](https://github.com/fte-team/fteqw) engine, which
+is licensed under the [GPL2](./contrib/GPL2) license.
+
+This project also uses the [ericw-tools](https://github.com/ericwa/ericw-tools)
+compiler tools, which are similarly licensed under the [GPL2](./contrib/GPL2)
+license.
+
+This project also uses the
+[LibreQuake](https://github.com/lavenderdotpet/LibreQuake) project to provide a
+baseline for game assets and code. LibreQuake's game assets are licensed under
+the [BSD3](./contrib/BSD3) license, while its code is licensed under the
+[GPL2](./contrib/GPL2) license.
+
+This project also uses the
+[Jolt Physics](https://github.com/jrouwe/JoltPhysics/) library, which is
+licensed under the [MIT](./contrib/MIT) license.
+
+Several other files in this repository were created by other authors, some of
+which may fall under other licenses. Please see [AUTHORS.md](./AUTHORS.md) for
+details.
+
+This rest of this repository is © erysdren (it/its) under the
+[GPL2](./contrib/GPL2) license.
+
+---
 
 Copyright (C) 1996-1997 Id Software, Inc.\
 Copyright (C) 2002-2025 Forethought Entertainment\

@@ -1,0 +1,23 @@
+{
+"classname" "worldspawn"
+"message" "test"
+"_sky" "vert_sky01a"
+"_fog" "0.02"
+"_skyfog" "0"
+"_maxdrawdist" "0"
+"_segmentsize" "1024"
+"_minxsegment" "-2048"
+"_minysegment" "-2048"
+"_maxxsegment" "2048"
+"_maxysegment" "2048"
+"_seed" ""
+"_exterior" "solid"
+"_defaultgroundtexture" "rowen/grass01"
+"_defaultgroundheight" "0"
+"_defaultwatertexture" "liquids/water01a"
+"_defaultwaterheight" "-64"
+}
+{
+"classname" "info_player_start"
+"origin" "0 0 64"
+}
